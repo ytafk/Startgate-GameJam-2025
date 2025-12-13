@@ -46,12 +46,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Shotgun
   weaponName: Shotgun
   pickupPrefab: {fileID: -6921054731480449621, guid: 560dc8abfc3912d4f90fe2c4aa3b1715, type: 3}
+<<<<<<< Updated upstream
   overloadPerHit: 3
   maxRange: 15
   shotCooldown: 1.1
   magazineSize: 8
   startReserveAmmo: 45
   reloadTime: 3
+=======
+  overloadPerHit: 5
+  maxRange: 10
+  shotCooldown: 1.1
+  magazineSize: 8
+  startReserveAmmo: 80
+  reloadTime: 2.5
+>>>>>>> Stashed changes
   autoReloadOnEmpty: 1
   firePoint: {fileID: 0}
   bulletPrefab: {fileID: 5592712660193589804, guid: 7649abd781141904fbd477d94a7ef8a2, type: 3}

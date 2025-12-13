@@ -47,17 +47,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Rifle
   weaponName: Rifle
   pickupPrefab: {fileID: -7394128973014782941, guid: 2c2e378392e532c4fac7670406f92bd4, type: 3}
+<<<<<<< Updated upstream
   overloadPerHit: 5
   maxRange: 30
   shotCooldown: 0.16666667
   magazineSize: 36
   startReserveAmmo: 180
   reloadTime: 2
+=======
+  overloadPerHit: 10
+  maxRange: 20
+  shotCooldown: 0.16666667
+  magazineSize: 36
+  startReserveAmmo: 216
+  reloadTime: 2.5
+>>>>>>> Stashed changes
   autoReloadOnEmpty: 1
   firePoint: {fileID: 0}
   bulletPrefab: {fileID: 5592712660193589804, guid: 7649abd781141904fbd477d94a7ef8a2, type: 3}
   cam: {fileID: 0}
+<<<<<<< Updated upstream
   bulletSpeed: 18
+=======
+  bulletSpeed: 22
+>>>>>>> Stashed changes
   ammoInMag: 0
   reserveAmmo: 0
   isReloading: 0

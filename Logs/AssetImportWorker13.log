@@ -1,9 +1,16 @@
 [Licensing::Module] Trying to connect to existing licensing client channel...
 Built from '6000.3/staging' branch; Version is '6000.3.0f1 (d1870ce95baf) revision 13731596'; Using compiler version '194234433'; Build Type 'Release'
+<<<<<<< Updated upstream
 [Licensing::IpcConnector] Successfully connected to: "LicenseClient-YTA" at "2025-12-12T21:55:47.6194236Z"
 OS: 'Windows 11  (10.0.26100) 64bit Professional' Language: 'tr' Physical Memory: 14029 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
 Date: 2025-12-12T21:55:47Z
+=======
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-YTA" at "2025-12-13T07:53:30.7683673Z"
+OS: 'Windows 11  (10.0.26100) 64bit Professional' Language: 'tr' Physical Memory: 14029 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
+Date: 2025-12-13T07:53:30Z
+>>>>>>> Stashed changes
 
 COMMAND LINE ARGUMENTS:
 D:\C_Calisma\6000.3.0f1\Editor\Unity.exe
@@ -13,11 +20,19 @@ D:\C_Calisma\6000.3.0f1\Editor\Unity.exe
 -name
 AssetImportWorker13
 -projectPath
+<<<<<<< Updated upstream
 D:/YTA/Desktop/Startgate GameJam 2025/Startgate GameJam
 -logFile
 Logs/AssetImportWorker13.log
 -srvPort
 54304
+=======
+D:/YTA/Desktop/Startgate GameJam 2025/Feed the robot
+-logFile
+Logs/AssetImportWorker13.log
+-srvPort
+61834
+>>>>>>> Stashed changes
 -licensingIpc
 LicenseClient-YTA
 -job-worker-count
@@ -28,8 +43,13 @@ LicenseClient-YTA
 1
 -name
 AssetImport
+<<<<<<< Updated upstream
 Successfully changed project path to: D:/YTA/Desktop/Startgate GameJam 2025/Startgate GameJam
 D:/YTA/Desktop/Startgate GameJam 2025/Startgate GameJam
+=======
+Successfully changed project path to: D:/YTA/Desktop/Startgate GameJam 2025/Feed the robot
+D:/YTA/Desktop/Startgate GameJam 2025/Feed the robot
+>>>>>>> Stashed changes
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
     "memorysetup-temp-allocator-size-audio-worker=65536"
@@ -65,12 +85,21 @@ D:/YTA/Desktop/Startgate GameJam 2025/Startgate GameJam
     "memorysetup-job-temp-allocator-block-size-background=1048576"
     "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
     "memorysetup-temp-allocator-size-cloud-worker=32768"
+<<<<<<< Updated upstream
 Player connection [32752]  Target information:
 
 Player connection [32752]  * "[IP] 192.168.1.67 [Port] 0 [Flags] 2 [Guid] 2887549907 [EditorId] 2887549907 [Version] 1048832 [Id] WindowsEditor(7,Yigit-PC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
 Player connection [32752] Host joined multi-casting on [225.0.0.222:54997]...
 Player connection [32752] Host joined alternative multi-casting on [225.0.0.222:34997]...
+=======
+Player connection [26600]  Target information:
+
+Player connection [26600]  * "[IP] 192.168.1.67 [Port] 0 [Flags] 2 [Guid] 4248518366 [EditorId] 4248518366 [Version] 1048832 [Id] WindowsEditor(7,Yigit-PC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [26600] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [26600] Host joined alternative multi-casting on [225.0.0.222:34997]...
+>>>>>>> Stashed changes
 JobSystem: Creating JobQueue using job-worker-count value 9
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
@@ -82,11 +111,19 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
+<<<<<<< Updated upstream
 Refreshing native plugins compatible for Editor in 11.79 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 6000.3.0f1 (d1870ce95baf)
 [Subsystems] Discovering subsystems at path D:/C_Calisma/6000.3.0f1/Editor/Data/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path D:/YTA/Desktop/Startgate GameJam 2025/Startgate GameJam/Assets
+=======
+Refreshing native plugins compatible for Editor in 4.34 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 6000.3.0f1 (d1870ce95baf)
+[Subsystems] Discovering subsystems at path D:/C_Calisma/6000.3.0f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/YTA/Desktop/Startgate GameJam 2025/Feed the robot/Assets
+>>>>>>> Stashed changes
 GfxDevice: creating device client; kGfxThreadingModeNonThreaded
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
@@ -98,6 +135,7 @@ Initialize mono
 Mono path[0] = 'D:/C_Calisma/6000.3.0f1/Editor/Data/Managed'
 Mono path[1] = 'D:/C_Calisma/6000.3.0f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'D:/C_Calisma/6000.3.0f1/Editor/Data/MonoBleedingEdge/etc'
+<<<<<<< Updated upstream
 Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56300
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
@@ -114,6 +152,22 @@ Register platform support module: D:/C_Calisma/6000.3.0f1/Editor/Data/PlaybackEn
 [Licensing::IpcConnector] Successfully connected to: "LicenseClient-YTA-notifications" at "2025-12-12T21:55:48.6864509Z"
 [Licensing::Module] Licensing Background thread has ended after 1.07s
 [Licensing::Module] Licensing is initialized (took 0.07s).
+=======
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56376
+Begin MonoManager ReloadAssembly
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.17.4+4293ba1
+  Session Id:              d2264d9ffd494ad1b2ccd69df6fee403
+  Correlation Id:          59885fa7c0bf53a5f5e69adc9f88a58f
+  External correlation Id: 344705778075224239
+  Machine Id:              mZZ1PC0OObweb8hRKufKTex2toM=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-YTA" (connect: 0.00s, validation: 0.00s, handshake: 1.01s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-YTA-notifications" at "2025-12-13T07:53:31.7831637Z"
+[Licensing::Module] Licensing Background thread has ended after 1.02s
+Registering precompiled unity dll's ...
+Register platform support module: D:/C_Calisma/6000.3.0f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: D:/C_Calisma/6000.3.0f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+>>>>>>> Stashed changes
 [Licensing::Client] Successfully resolved entitlement details
 [Licensing::Module] License group:
   Id: F4-ZVQ7-45W5-PW38-JYCC-XXXX
@@ -150,25 +204,41 @@ Register platform support module: D:/C_Calisma/6000.3.0f1/Editor/Data/PlaybackEn
   Type: Assigned
   Expiration: Unlimited
 Register platform support module: D:/C_Calisma/6000.3.0f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
+<<<<<<< Updated upstream
 Registered in 0.080350 seconds.
 - Loaded All Assemblies, in  0.451 seconds
+=======
+Registered in 0.013963 seconds.
+- Loaded All Assemblies, in  0.425 seconds
+>>>>>>> Stashed changes
 [usbmuxd] Start listen thread
 [usbmuxd] Listen thread started
 Native extension for iOS target not found
 Native extension for Android target not found
+<<<<<<< Updated upstream
 Android Extension - Scanning For ADB Devices 275 ms
+=======
+Android Extension - Scanning For ADB Devices 239 ms
+>>>>>>> Stashed changes
 Native extension for UWP target not found
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
+<<<<<<< Updated upstream
 - Finished resetting the current domain, in  0.662 seconds
 Domain Reload Profiling: 1113ms
 	BeginReloadAssembly (125ms)
+=======
+- Finished resetting the current domain, in  0.619 seconds
+Domain Reload Profiling: 1044ms
+	BeginReloadAssembly (177ms)
+>>>>>>> Stashed changes
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
+<<<<<<< Updated upstream
 	RebuildCommonClasses (29ms)
 	RebuildNativeTypeToScriptingClass (10ms)
 	initialDomainReloadingComplete (112ms)
@@ -190,6 +260,29 @@ Domain Reload Profiling: 1113ms
 			BeforeProcessingInitializeOnLoad (63ms)
 			ProcessInitializeOnLoadAttributes (110ms)
 			ProcessInitializeOnLoadMethodAttributes (56ms)
+=======
+	RebuildCommonClasses (31ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (49ms)
+	LoadAllAssembliesAndSetupDomain (157ms)
+		LoadAssemblies (177ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (153ms)
+			TypeCache.Refresh (151ms)
+				TypeCache.ScanAssembly (140ms)
+			BuildScriptInfoCaches (0ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (619ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (583ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (347ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (74ms)
+			ProcessInitializeOnLoadAttributes (117ms)
+			ProcessInitializeOnLoadMethodAttributes (41ms)
+>>>>>>> Stashed changes
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -209,8 +302,13 @@ Begin MonoManager ReloadAssembly
   Product: Unity Personal
   Type: Assigned
   Expiration: Unlimited
+<<<<<<< Updated upstream
 - Loaded All Assemblies, in  0.710 seconds
 Refreshing native plugins compatible for Editor in 1.45 ms, found 4 plugins.
+=======
+- Loaded All Assemblies, in  0.708 seconds
+Refreshing native plugins compatible for Editor in 1.37 ms, found 4 plugins.
+>>>>>>> Stashed changes
 Native extension for iOS target not found
 Native extension for Android target not found
 Native extension for UWP target not found
@@ -221,6 +319,7 @@ Package Manager log level set to [2]
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
+<<<<<<< Updated upstream
 - Finished resetting the current domain, in  0.798 seconds
 Domain Reload Profiling: 1507ms
 	BeginReloadAssembly (165ms)
@@ -250,10 +349,42 @@ Domain Reload Profiling: 1507ms
 			BeforeProcessingInitializeOnLoad (114ms)
 			ProcessInitializeOnLoadAttributes (406ms)
 			ProcessInitializeOnLoadMethodAttributes (115ms)
+=======
+- Finished resetting the current domain, in  0.841 seconds
+Domain Reload Profiling: 1548ms
+	BeginReloadAssembly (183ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (6ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (29ms)
+	RebuildCommonClasses (33ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (30ms)
+	LoadAllAssembliesAndSetupDomain (451ms)
+		LoadAssemblies (334ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (227ms)
+			TypeCache.Refresh (161ms)
+				TypeCache.ScanAssembly (147ms)
+			BuildScriptInfoCaches (53ms)
+			ResolveRequiredComponents (9ms)
+	FinalizeReload (841ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (722ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (20ms)
+			SetLoadedEditorAssemblies (5ms)
+			BeforeProcessingInitializeOnLoad (138ms)
+			ProcessInitializeOnLoadAttributes (439ms)
+			ProcessInitializeOnLoadMethodAttributes (119ms)
+>>>>>>> Stashed changes
 			AfterProcessingInitializeOnLoad (1ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (5ms)
+<<<<<<< Updated upstream
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
 Refreshing native plugins compatible for Editor in 1.57 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
@@ -277,6 +408,39 @@ Received Prepare
 Begin MonoManager ReloadAssembly
 - Loaded All Assemblies, in  0.921 seconds
 Refreshing native plugins compatible for Editor in 1.22 ms, found 4 plugins.
+=======
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
+Refreshing native plugins compatible for Editor in 2.61 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 16 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6884 unused Assets / (4.3 MB). Loaded Objects now: 7737.
+Memory consumption went from 163.9 MB to 159.7 MB.
+Total: 14.558700 ms (FindLiveObjects: 1.728400 ms CreateObjectMapping: 0.869100 ms MarkObjects: 8.993100 ms  DeleteObjects: 2.966500 ms)
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 2.32 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 16 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6872 unused Assets / (4.1 MB). Loaded Objects now: 7737.
+Memory consumption went from 161.6 MB to 157.5 MB.
+Total: 55.909700 ms (FindLiveObjects: 0.709400 ms CreateObjectMapping: 24.685000 ms MarkObjects: 27.677800 ms  DeleteObjects: 2.834800 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 930035.102334 seconds.
+  path: Assets/Prefabs/Regular_Bullet.prefab
+  artifactKey: Guid(7649abd781141904fbd477d94a7ef8a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Regular_Bullet.prefab using Guid(7649abd781141904fbd477d94a7ef8a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '48f4a9ad234c0c49180ca19bac1efb89') in 1.1349641 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  1.144 seconds
+Refreshing native plugins compatible for Editor in 1.48 ms, found 4 plugins.
+>>>>>>> Stashed changes
 Native extension for iOS target not found
 Native extension for Android target not found
 Native extension for UWP target not found
@@ -286,6 +450,7 @@ Native extension for WebGL target not found
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
+<<<<<<< Updated upstream
 - Finished resetting the current domain, in  0.791 seconds
 Domain Reload Profiling: 1716ms
 	BeginReloadAssembly (259ms)
@@ -325,10 +490,52 @@ Unloading 16 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 6880 unused Assets / (3.9 MB). Loaded Objects now: 7738.
 Memory consumption went from 160.8 MB to 156.9 MB.
 Total: 12.324500 ms (FindLiveObjects: 0.686800 ms CreateObjectMapping: 0.883900 ms MarkObjects: 8.123400 ms  DeleteObjects: 2.628400 ms)
+=======
+- Finished resetting the current domain, in  1.107 seconds
+Domain Reload Profiling: 2256ms
+	BeginReloadAssembly (432ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (25ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (78ms)
+	RebuildCommonClasses (47ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (37ms)
+	LoadAllAssembliesAndSetupDomain (620ms)
+		LoadAssemblies (644ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (242ms)
+			TypeCache.Refresh (13ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (213ms)
+			ResolveRequiredComponents (10ms)
+	FinalizeReload (1108ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (892ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (27ms)
+			SetLoadedEditorAssemblies (7ms)
+			BeforeProcessingInitializeOnLoad (190ms)
+			ProcessInitializeOnLoadAttributes (569ms)
+			ProcessInitializeOnLoadMethodAttributes (95ms)
+			AfterProcessingInitializeOnLoad (3ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (21ms)
+Refreshing native plugins compatible for Editor in 2.60 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 16 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6884 unused Assets / (4.0 MB). Loaded Objects now: 7772.
+Memory consumption went from 166.9 MB to 162.9 MB.
+Total: 14.108400 ms (FindLiveObjects: 0.720400 ms CreateObjectMapping: 0.640400 ms MarkObjects: 10.012300 ms  DeleteObjects: 2.733400 ms)
+>>>>>>> Stashed changes
 
 Prepare: number of updated asset objects reloaded= 0
 ========================================================================
 Received Prepare
+<<<<<<< Updated upstream
 Refreshing native plugins compatible for Editor in 2.62 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 16 Unused Serialized files (Serialized files now loaded: 0)
@@ -415,6 +622,11 @@ Begin MonoManager ReloadAssembly
   Expiration: Unlimited
 - Loaded All Assemblies, in  0.670 seconds
 Refreshing native plugins compatible for Editor in 1.26 ms, found 4 plugins.
+=======
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.942 seconds
+Refreshing native plugins compatible for Editor in 1.52 ms, found 4 plugins.
+>>>>>>> Stashed changes
 Native extension for iOS target not found
 Native extension for Android target not found
 Native extension for UWP target not found
@@ -424,13 +636,20 @@ Native extension for WebGL target not found
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
+<<<<<<< Updated upstream
 - Finished resetting the current domain, in  0.736 seconds
 Domain Reload Profiling: 1409ms
 	BeginReloadAssembly (219ms)
+=======
+- Finished resetting the current domain, in  1.003 seconds
+Domain Reload Profiling: 1948ms
+	BeginReloadAssembly (330ms)
+>>>>>>> Stashed changes
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (12ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
+<<<<<<< Updated upstream
 		CreateAndSetChildDomain (47ms)
 	RebuildCommonClasses (31ms)
 	RebuildNativeTypeToScriptingClass (11ms)
@@ -653,6 +872,40 @@ Unloading 16 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 6888 unused Assets / (4.2 MB). Loaded Objects now: 7780.
 Memory consumption went from 163.2 MB to 159.0 MB.
 Total: 12.208200 ms (FindLiveObjects: 0.706400 ms CreateObjectMapping: 0.582100 ms MarkObjects: 7.825900 ms  DeleteObjects: 3.092000 ms)
+=======
+		CreateAndSetChildDomain (53ms)
+	RebuildCommonClasses (40ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (35ms)
+	LoadAllAssembliesAndSetupDomain (527ms)
+		LoadAssemblies (533ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (208ms)
+			TypeCache.Refresh (8ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (183ms)
+			ResolveRequiredComponents (12ms)
+	FinalizeReload (1004ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (828ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (24ms)
+			SetLoadedEditorAssemblies (7ms)
+			BeforeProcessingInitializeOnLoad (195ms)
+			ProcessInitializeOnLoadAttributes (508ms)
+			ProcessInitializeOnLoadMethodAttributes (91ms)
+			AfterProcessingInitializeOnLoad (2ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (17ms)
+Refreshing native plugins compatible for Editor in 2.28 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 16 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6882 unused Assets / (4.2 MB). Loaded Objects now: 7775.
+Memory consumption went from 166.9 MB to 162.7 MB.
+Total: 13.538300 ms (FindLiveObjects: 1.050400 ms CreateObjectMapping: 0.523800 ms MarkObjects: 8.942100 ms  DeleteObjects: 3.020100 ms)
+>>>>>>> Stashed changes
 
 Prepare: number of updated asset objects reloaded= 0
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout

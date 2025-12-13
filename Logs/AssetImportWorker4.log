@@ -1,9 +1,16 @@
 [Licensing::Module] Trying to connect to existing licensing client channel...
 Built from '6000.3/staging' branch; Version is '6000.3.0f1 (d1870ce95baf) revision 13731596'; Using compiler version '194234433'; Build Type 'Release'
+<<<<<<< Updated upstream
 OS: 'Windows 11  (10.0.26100) 64bit Professional' Language: 'tr' Physical Memory: 14029 MB
 [Licensing::IpcConnector] Successfully connected to: "LicenseClient-YTA" at "2025-12-12T18:11:28.789785Z"
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
 Date: 2025-12-12T18:11:28Z
+=======
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-YTA" at "2025-12-13T06:41:10.38503Z"
+OS: 'Windows 11  (10.0.26100) 64bit Professional' Language: 'tr' Physical Memory: 14029 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
+Date: 2025-12-13T06:41:10Z
+>>>>>>> Stashed changes
 
 COMMAND LINE ARGUMENTS:
 D:\C_Calisma\6000.3.0f1\Editor\Unity.exe
@@ -13,11 +20,19 @@ D:\C_Calisma\6000.3.0f1\Editor\Unity.exe
 -name
 AssetImportWorker4
 -projectPath
+<<<<<<< Updated upstream
 D:/YTA/Desktop/Startgate GameJam 2025/Startgate GameJam
 -logFile
 Logs/AssetImportWorker4.log
 -srvPort
 54304
+=======
+D:/YTA/Desktop/Startgate GameJam 2025/Feed the robot
+-logFile
+Logs/AssetImportWorker4.log
+-srvPort
+61834
+>>>>>>> Stashed changes
 -licensingIpc
 LicenseClient-YTA
 -job-worker-count
@@ -28,8 +43,13 @@ LicenseClient-YTA
 1
 -name
 AssetImport
+<<<<<<< Updated upstream
 Successfully changed project path to: D:/YTA/Desktop/Startgate GameJam 2025/Startgate GameJam
 D:/YTA/Desktop/Startgate GameJam 2025/Startgate GameJam
+=======
+Successfully changed project path to: D:/YTA/Desktop/Startgate GameJam 2025/Feed the robot
+D:/YTA/Desktop/Startgate GameJam 2025/Feed the robot
+>>>>>>> Stashed changes
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
     "memorysetup-temp-allocator-size-audio-worker=65536"
@@ -65,12 +85,21 @@ D:/YTA/Desktop/Startgate GameJam 2025/Startgate GameJam
     "memorysetup-job-temp-allocator-block-size-background=1048576"
     "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
     "memorysetup-temp-allocator-size-cloud-worker=32768"
+<<<<<<< Updated upstream
 Player connection [32604]  Target information:
 
 Player connection [32604]  * "[IP] 192.168.1.67 [Port] 0 [Flags] 2 [Guid] 54558550 [EditorId] 54558550 [Version] 1048832 [Id] WindowsEditor(7,Yigit-PC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
 Player connection [32604] Host joined multi-casting on [225.0.0.222:54997]...
 Player connection [32604] Host joined alternative multi-casting on [225.0.0.222:34997]...
+=======
+Player connection [2444]  Target information:
+
+Player connection [2444]  * "[IP] 192.168.1.67 [Port] 0 [Flags] 2 [Guid] 3787105581 [EditorId] 3787105581 [Version] 1048832 [Id] WindowsEditor(7,Yigit-PC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [2444] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [2444] Host joined alternative multi-casting on [225.0.0.222:34997]...
+>>>>>>> Stashed changes
 JobSystem: Creating JobQueue using job-worker-count value 9
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
@@ -82,11 +111,19 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
+<<<<<<< Updated upstream
 Refreshing native plugins compatible for Editor in 8.12 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 6000.3.0f1 (d1870ce95baf)
 [Subsystems] Discovering subsystems at path D:/C_Calisma/6000.3.0f1/Editor/Data/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path D:/YTA/Desktop/Startgate GameJam 2025/Startgate GameJam/Assets
+=======
+Refreshing native plugins compatible for Editor in 4.37 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 6000.3.0f1 (d1870ce95baf)
+[Subsystems] Discovering subsystems at path D:/C_Calisma/6000.3.0f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/YTA/Desktop/Startgate GameJam 2025/Feed the robot/Assets
+>>>>>>> Stashed changes
 GfxDevice: creating device client; kGfxThreadingModeNonThreaded
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
@@ -98,6 +135,7 @@ Initialize mono
 Mono path[0] = 'D:/C_Calisma/6000.3.0f1/Editor/Data/Managed'
 Mono path[1] = 'D:/C_Calisma/6000.3.0f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'D:/C_Calisma/6000.3.0f1/Editor/Data/MonoBleedingEdge/etc'
+<<<<<<< Updated upstream
 Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56752
 Begin MonoManager ReloadAssembly
 [Licensing::Client] Handshaking with LicensingClient:
@@ -109,6 +147,19 @@ Begin MonoManager ReloadAssembly
 [Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-YTA" (connect: 0.00s, validation: 0.01s, handshake: 1.58s)
 [Licensing::IpcConnector] Successfully connected to: "LicenseClient-YTA-notifications" at "2025-12-12T18:11:30.3779997Z"
 [Licensing::Module] Licensing Background thread has ended after 1.59s
+=======
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56452
+Begin MonoManager ReloadAssembly
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.17.4+4293ba1
+  Session Id:              13a3e08ae05744749ecbde343debfada
+  Correlation Id:          59885fa7c0bf53a5f5e69adc9f88a58f
+  External correlation Id: 3946363955942732304
+  Machine Id:              mZZ1PC0OObweb8hRKufKTex2toM=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-YTA" (connect: 0.00s, validation: 0.00s, handshake: 1.22s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-YTA-notifications" at "2025-12-13T06:41:11.6090467Z"
+[Licensing::Module] Licensing Background thread has ended after 1.22s
+>>>>>>> Stashed changes
 Registering precompiled unity dll's ...
 Register platform support module: D:/C_Calisma/6000.3.0f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: D:/C_Calisma/6000.3.0f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
@@ -148,25 +199,41 @@ Register platform support module: D:/C_Calisma/6000.3.0f1/Editor/Data/PlaybackEn
   Type: Assigned
   Expiration: Unlimited
 Register platform support module: D:/C_Calisma/6000.3.0f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
+<<<<<<< Updated upstream
 Registered in 0.026739 seconds.
 - Loaded All Assemblies, in  0.823 seconds
+=======
+Registered in 0.025577 seconds.
+- Loaded All Assemblies, in  0.569 seconds
+>>>>>>> Stashed changes
 [usbmuxd] Start listen thread
 [usbmuxd] Listen thread started
 Native extension for iOS target not found
 Native extension for Android target not found
+<<<<<<< Updated upstream
 Android Extension - Scanning For ADB Devices 404 ms
+=======
+Android Extension - Scanning For ADB Devices 1757 ms
+>>>>>>> Stashed changes
 Native extension for UWP target not found
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
+<<<<<<< Updated upstream
 - Finished resetting the current domain, in  1.075 seconds
 Domain Reload Profiling: 1898ms
 	BeginReloadAssembly (409ms)
+=======
+- Finished resetting the current domain, in  2.249 seconds
+Domain Reload Profiling: 2817ms
+	BeginReloadAssembly (250ms)
+>>>>>>> Stashed changes
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
+<<<<<<< Updated upstream
 	RebuildCommonClasses (62ms)
 	RebuildNativeTypeToScriptingClass (18ms)
 	initialDomainReloadingComplete (85ms)
@@ -188,6 +255,29 @@ Domain Reload Profiling: 1898ms
 			BeforeProcessingInitializeOnLoad (118ms)
 			ProcessInitializeOnLoadAttributes (223ms)
 			ProcessInitializeOnLoadMethodAttributes (113ms)
+=======
+	RebuildCommonClasses (35ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (68ms)
+	LoadAllAssembliesAndSetupDomain (203ms)
+		LoadAssemblies (251ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (197ms)
+			TypeCache.Refresh (196ms)
+				TypeCache.ScanAssembly (180ms)
+			BuildScriptInfoCaches (0ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (2249ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (2212ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (1885ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (94ms)
+			ProcessInitializeOnLoadAttributes (167ms)
+			ProcessInitializeOnLoadMethodAttributes (62ms)
+>>>>>>> Stashed changes
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -207,8 +297,13 @@ Begin MonoManager ReloadAssembly
   Product: Unity Personal
   Type: Assigned
   Expiration: Unlimited
+<<<<<<< Updated upstream
 - Loaded All Assemblies, in  1.067 seconds
 Refreshing native plugins compatible for Editor in 1.02 ms, found 4 plugins.
+=======
+- Loaded All Assemblies, in  1.022 seconds
+Refreshing native plugins compatible for Editor in 1.43 ms, found 4 plugins.
+>>>>>>> Stashed changes
 Native extension for iOS target not found
 Native extension for Android target not found
 Native extension for UWP target not found
@@ -219,6 +314,7 @@ Package Manager log level set to [2]
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
+<<<<<<< Updated upstream
 - Finished resetting the current domain, in  0.948 seconds
 Domain Reload Profiling: 2014ms
 	BeginReloadAssembly (210ms)
@@ -1876,10 +1972,69 @@ Received Import Request.
   artifactKey: Guid(74d67bd508d9d774893be359c13913e2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
 Start importing Assets/Gameplay_Scripts/Weapons/PlayerWeaponInventory.cs using Guid(74d67bd508d9d774893be359c13913e2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b1d5d281d523958916841cf9d7eede00') in 0.1007254 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+=======
+- Finished resetting the current domain, in  1.180 seconds
+Domain Reload Profiling: 2201ms
+	BeginReloadAssembly (260ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (7ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (39ms)
+	RebuildCommonClasses (37ms)
+	RebuildNativeTypeToScriptingClass (16ms)
+	initialDomainReloadingComplete (40ms)
+	LoadAllAssembliesAndSetupDomain (667ms)
+		LoadAssemblies (482ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (349ms)
+			TypeCache.Refresh (260ms)
+				TypeCache.ScanAssembly (239ms)
+			BuildScriptInfoCaches (74ms)
+			ResolveRequiredComponents (11ms)
+	FinalizeReload (1180ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1006ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (25ms)
+			SetLoadedEditorAssemblies (7ms)
+			BeforeProcessingInitializeOnLoad (147ms)
+			ProcessInitializeOnLoadAttributes (572ms)
+			ProcessInitializeOnLoadMethodAttributes (252ms)
+			AfterProcessingInitializeOnLoad (3ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (9ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
+Refreshing native plugins compatible for Editor in 2.64 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 16 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6884 unused Assets / (4.2 MB). Loaded Objects now: 7737.
+Memory consumption went from 152.4 MB to 148.2 MB.
+Total: 13.445200 ms (FindLiveObjects: 0.785200 ms CreateObjectMapping: 0.600100 ms MarkObjects: 9.146000 ms  DeleteObjects: 2.911600 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 925660.936783 seconds.
+  path: Packages/com.unity.render-pipelines.core/Runtime/GPUDriven/InstanceOcclusionCuller.cs.hlsl
+  artifactKey: Guid(a71fe447aa3034341b4a16245852e2f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.core/Runtime/GPUDriven/InstanceOcclusionCuller.cs.hlsl using Guid(a71fe447aa3034341b4a16245852e2f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1904bfec7c6db8738bba59ca1f265c90') in 0.0326513 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Packages/com.unity.render-pipelines.core/Runtime/GPUDriven/OcclusionCullingCommonShaderVariables.cs.hlsl
+  artifactKey: Guid(a5ea6c3e82289ce4d8ea0b60a96b1ee2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.core/Runtime/GPUDriven/OcclusionCullingCommonShaderVariables.cs.hlsl using Guid(a5ea6c3e82289ce4d8ea0b60a96b1ee2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'bc41ff655e8fd35d098153120fd6771f') in 0.001869 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+>>>>>>> Stashed changes
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000022 seconds.
+<<<<<<< Updated upstream
   path: Assets/Prefabs/WeaponMiniGun.prefab
   artifactKey: Guid(90d380e66a118094daab84707083b067) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
 Start importing Assets/Prefabs/WeaponMiniGun.prefab using Guid(90d380e66a118094daab84707083b067) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '7099f19b1ff7e0cf73b88431a213314a') in 0.1063396 seconds
@@ -1908,14 +2063,27 @@ Received Import Request.
   artifactKey: Guid(c6800060be0d44a41aa8f5c1d50ec411) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
 Start importing Assets/UI_Scripts/UIManager.cs using Guid(c6800060be0d44a41aa8f5c1d50ec411) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '20015416651dce502a0706fc12488775') in 0.0264404 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+=======
+  path: Packages/com.unity.render-pipelines.core/Runtime/GPUDriven/OcclusionCullingCommon.hlsl
+  artifactKey: Guid(13f1cda4ab8412041ac157181fa6e421) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.core/Runtime/GPUDriven/OcclusionCullingCommon.hlsl using Guid(13f1cda4ab8412041ac157181fa6e421) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1dd4e1cee3e4ca4535ff197887c0c64d') in 0.0019329 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+>>>>>>> Stashed changes
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000019 seconds.
+<<<<<<< Updated upstream
   path: Assets/Prefabs/MiniGunPickup.prefab
   artifactKey: Guid(efe2e02afd9e9084daaa49f76f43bc92) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
 Start importing Assets/Prefabs/MiniGunPickup.prefab using Guid(efe2e02afd9e9084daaa49f76f43bc92) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '95f422db8a2f4daa7b70fcf919c65f1b') in 0.035795 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 19
+=======
+  path: Packages/com.unity.render-pipelines.core/Runtime/GPUDriven/OcclusionCullingDebugShaderVariables.cs.hlsl
+  artifactKey: Guid(00f96d87bb315084d89b58bd90c5304a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.core/Runtime/GPUDriven/OcclusionCullingDebugShaderVariables.cs.hlsl using Guid(00f96d87bb315084d89b58bd90c5304a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f13e09d8f2abdfe3051b12a035c7409c') in 0.0023586 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+>>>>>>> Stashed changes
 
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 AssetImportWorker is now disconnected from the server

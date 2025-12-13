@@ -315,11 +315,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 400713565206645009, guid: 1d26fa4280d4acd4aa97cb60ba0bcc91, type: 3}
       propertyPath: m_LocalPosition.x
+<<<<<<< Updated upstream
       value: 3.54
       objectReference: {fileID: 0}
     - target: {fileID: 400713565206645009, guid: 1d26fa4280d4acd4aa97cb60ba0bcc91, type: 3}
       propertyPath: m_LocalPosition.y
       value: -3.64
+=======
+      value: 3.97
+      objectReference: {fileID: 0}
+    - target: {fileID: 400713565206645009, guid: 1d26fa4280d4acd4aa97cb60ba0bcc91, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -5.7
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: 400713565206645009, guid: 1d26fa4280d4acd4aa97cb60ba0bcc91, type: 3}
       propertyPath: m_LocalPosition.z
@@ -650,11 +658,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 400713565206645009, guid: 1d26fa4280d4acd4aa97cb60ba0bcc91, type: 3}
       propertyPath: m_LocalPosition.x
+<<<<<<< Updated upstream
       value: -4.91
       objectReference: {fileID: 0}
     - target: {fileID: 400713565206645009, guid: 1d26fa4280d4acd4aa97cb60ba0bcc91, type: 3}
       propertyPath: m_LocalPosition.y
       value: -4.26
+=======
+      value: -9.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400713565206645009, guid: 1d26fa4280d4acd4aa97cb60ba0bcc91, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.15
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: 400713565206645009, guid: 1d26fa4280d4acd4aa97cb60ba0bcc91, type: 3}
       propertyPath: m_LocalPosition.z
@@ -711,11 +727,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 400713565206645009, guid: 1d26fa4280d4acd4aa97cb60ba0bcc91, type: 3}
       propertyPath: m_LocalPosition.x
+<<<<<<< Updated upstream
       value: -6.44
       objectReference: {fileID: 0}
     - target: {fileID: 400713565206645009, guid: 1d26fa4280d4acd4aa97cb60ba0bcc91, type: 3}
       propertyPath: m_LocalPosition.y
       value: -3.8
+=======
+      value: -6.96
+      objectReference: {fileID: 0}
+    - target: {fileID: 400713565206645009, guid: 1d26fa4280d4acd4aa97cb60ba0bcc91, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -6.1
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: 400713565206645009, guid: 1d26fa4280d4acd4aa97cb60ba0bcc91, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1157,8 +1181,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 422ea608c2d21ed4fb85894989103880, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WeaponPickupText
+<<<<<<< Updated upstream
   text: {fileID: 0}
   showSeconds: 1.2
+=======
+>>>>>>> Stashed changes
 --- !u!1001 &1247727437
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1169,11 +1196,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 400713565206645009, guid: 1d26fa4280d4acd4aa97cb60ba0bcc91, type: 3}
       propertyPath: m_LocalPosition.x
+<<<<<<< Updated upstream
       value: 8.09
       objectReference: {fileID: 0}
     - target: {fileID: 400713565206645009, guid: 1d26fa4280d4acd4aa97cb60ba0bcc91, type: 3}
       propertyPath: m_LocalPosition.y
       value: -3.2
+=======
+      value: 9.55
+      objectReference: {fileID: 0}
+    - target: {fileID: 400713565206645009, guid: 1d26fa4280d4acd4aa97cb60ba0bcc91, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.95
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: 400713565206645009, guid: 1d26fa4280d4acd4aa97cb60ba0bcc91, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1229,7 +1264,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1259514862}
+<<<<<<< Updated upstream
   m_Layer: 0
+=======
+  m_Layer: 8
+>>>>>>> Stashed changes
   m_Name: WeaponHolder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1260,7 +1299,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1295175886}
+<<<<<<< Updated upstream
   m_Layer: 0
+=======
+  m_Layer: 8
+>>>>>>> Stashed changes
   m_Name: Crosshair
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1292,11 +1335,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 400713565206645009, guid: 1d26fa4280d4acd4aa97cb60ba0bcc91, type: 3}
       propertyPath: m_LocalPosition.x
+<<<<<<< Updated upstream
       value: 6.7
       objectReference: {fileID: 0}
     - target: {fileID: 400713565206645009, guid: 1d26fa4280d4acd4aa97cb60ba0bcc91, type: 3}
       propertyPath: m_LocalPosition.y
       value: -4.22
+=======
+      value: 7.49
+      objectReference: {fileID: 0}
+    - target: {fileID: 400713565206645009, guid: 1d26fa4280d4acd4aa97cb60ba0bcc91, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -5.29
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: 400713565206645009, guid: 1d26fa4280d4acd4aa97cb60ba0bcc91, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1353,11 +1404,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 400713565206645009, guid: 1d26fa4280d4acd4aa97cb60ba0bcc91, type: 3}
       propertyPath: m_LocalPosition.x
+<<<<<<< Updated upstream
       value: 0.14
       objectReference: {fileID: 0}
     - target: {fileID: 400713565206645009, guid: 1d26fa4280d4acd4aa97cb60ba0bcc91, type: 3}
       propertyPath: m_LocalPosition.y
       value: -3.84
+=======
+      value: -0.77
+      objectReference: {fileID: 0}
+    - target: {fileID: 400713565206645009, guid: 1d26fa4280d4acd4aa97cb60ba0bcc91, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -5.86
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: 400713565206645009, guid: 1d26fa4280d4acd4aa97cb60ba0bcc91, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1470,14 +1529,23 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1693845142}
+<<<<<<< Updated upstream
+=======
+  - component: {fileID: 1693845149}
+>>>>>>> Stashed changes
   - component: {fileID: 1693845141}
   - component: {fileID: 1693845140}
   - component: {fileID: 1693845144}
   - component: {fileID: 1693845143}
   - component: {fileID: 1693845146}
   - component: {fileID: 1693845147}
+<<<<<<< Updated upstream
   - component: {fileID: 1693845148}
   m_Layer: 0
+=======
+  - component: {fileID: 1693845150}
+  m_Layer: 8
+>>>>>>> Stashed changes
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -1647,9 +1715,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79e152c42bd489c4f858ef7f28c4f94a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WeaponController2D
+<<<<<<< Updated upstream
   pistol: {fileID: 0}
   smg: {fileID: 0}
   current: {fileID: 0}
+=======
+>>>>>>> Stashed changes
 --- !u!114 &1693845147
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1668,8 +1739,27 @@ MonoBehaviour:
   slot2: {fileID: 0}
   current: {fileID: 0}
   messageUI: {fileID: 345452619}
+<<<<<<< Updated upstream
 --- !u!61 &1693845148
 BoxCollider2D:
+=======
+--- !u!114 &1693845149
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1693845139}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d616a874e77cfb43a3f94d1371b6a24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerHealth
+  maxHP: 100
+  hp: 100
+--- !u!58 &1693845150
+CircleCollider2D:
+>>>>>>> Stashed changes
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -1698,11 +1788,16 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
+<<<<<<< Updated upstream
   m_IsTrigger: 1
+=======
+  m_IsTrigger: 0
+>>>>>>> Stashed changes
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
+<<<<<<< Updated upstream
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1714,6 +1809,9 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+=======
+  m_Radius: 0.5
+>>>>>>> Stashed changes
 --- !u!1001 &1694532837
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1724,11 +1822,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 400713565206645009, guid: 1d26fa4280d4acd4aa97cb60ba0bcc91, type: 3}
       propertyPath: m_LocalPosition.x
+<<<<<<< Updated upstream
       value: 5.04
       objectReference: {fileID: 0}
     - target: {fileID: 400713565206645009, guid: 1d26fa4280d4acd4aa97cb60ba0bcc91, type: 3}
       propertyPath: m_LocalPosition.y
       value: -4.15
+=======
+      value: 5.99
+      objectReference: {fileID: 0}
+    - target: {fileID: 400713565206645009, guid: 1d26fa4280d4acd4aa97cb60ba0bcc91, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -5.65
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: 400713565206645009, guid: 1d26fa4280d4acd4aa97cb60ba0bcc91, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1785,11 +1891,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 400713565206645009, guid: 1d26fa4280d4acd4aa97cb60ba0bcc91, type: 3}
       propertyPath: m_LocalPosition.x
+<<<<<<< Updated upstream
       value: -7.85
       objectReference: {fileID: 0}
     - target: {fileID: 400713565206645009, guid: 1d26fa4280d4acd4aa97cb60ba0bcc91, type: 3}
       propertyPath: m_LocalPosition.y
       value: -4.28
+=======
+      value: -8.84
+      objectReference: {fileID: 0}
+    - target: {fileID: 400713565206645009, guid: 1d26fa4280d4acd4aa97cb60ba0bcc91, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -5.54
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: 400713565206645009, guid: 1d26fa4280d4acd4aa97cb60ba0bcc91, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1846,11 +1960,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 400713565206645009, guid: 1d26fa4280d4acd4aa97cb60ba0bcc91, type: 3}
       propertyPath: m_LocalPosition.x
+<<<<<<< Updated upstream
       value: -1.71
       objectReference: {fileID: 0}
     - target: {fileID: 400713565206645009, guid: 1d26fa4280d4acd4aa97cb60ba0bcc91, type: 3}
       propertyPath: m_LocalPosition.y
       value: -4.42
+=======
+      value: -2.65
+      objectReference: {fileID: 0}
+    - target: {fileID: 400713565206645009, guid: 1d26fa4280d4acd4aa97cb60ba0bcc91, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -6.08
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: 400713565206645009, guid: 1d26fa4280d4acd4aa97cb60ba0bcc91, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1907,11 +2029,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 400713565206645009, guid: 1d26fa4280d4acd4aa97cb60ba0bcc91, type: 3}
       propertyPath: m_LocalPosition.x
+<<<<<<< Updated upstream
       value: 1.97
       objectReference: {fileID: 0}
     - target: {fileID: 400713565206645009, guid: 1d26fa4280d4acd4aa97cb60ba0bcc91, type: 3}
       propertyPath: m_LocalPosition.y
       value: -4.36
+=======
+      value: 2.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 400713565206645009, guid: 1d26fa4280d4acd4aa97cb60ba0bcc91, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -5.94
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: 400713565206645009, guid: 1d26fa4280d4acd4aa97cb60ba0bcc91, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2139,11 +2269,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 400713565206645009, guid: 1d26fa4280d4acd4aa97cb60ba0bcc91, type: 3}
       propertyPath: m_LocalPosition.x
+<<<<<<< Updated upstream
       value: -3.32
       objectReference: {fileID: 0}
     - target: {fileID: 400713565206645009, guid: 1d26fa4280d4acd4aa97cb60ba0bcc91, type: 3}
       propertyPath: m_LocalPosition.y
       value: -3.76
+=======
+      value: -4.82
+      objectReference: {fileID: 0}
+    - target: {fileID: 400713565206645009, guid: 1d26fa4280d4acd4aa97cb60ba0bcc91, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -5.7
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: 400713565206645009, guid: 1d26fa4280d4acd4aa97cb60ba0bcc91, type: 3}
       propertyPath: m_LocalPosition.z

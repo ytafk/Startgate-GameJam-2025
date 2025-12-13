@@ -104,6 +104,14 @@ public class PlayerWeaponInventory : MonoBehaviour
         var w = Instantiate(prefab, weaponsHolder);
         w.firePoint = firePoint;
         if (!w.cam) w.cam = Camera.main;
+<<<<<<< Updated upstream
+=======
+
+        // ✅ Elde silah sprite'ı görünmesin (pickup sprite'ı ayrı kalacak)
+        foreach (var sr in w.GetComponentsInChildren<SpriteRenderer>(true))
+            sr.enabled = false;
+
+>>>>>>> Stashed changes
         w.gameObject.SetActive(false);
         return w;
     }

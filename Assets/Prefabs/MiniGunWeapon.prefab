@@ -106,12 +106,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Minigun2D
   weaponName: MiniGun
   pickupPrefab: {fileID: 8541199928037923022, guid: efe2e02afd9e9084daaa49f76f43bc92, type: 3}
+<<<<<<< Updated upstream
   overloadPerHit: 3
   maxRange: 20
   shotCooldown: 0.06666667
   magazineSize: 50
   startReserveAmmo: 200
   reloadTime: 6
+=======
+  overloadPerHit: 5
+  maxRange: 20
+  shotCooldown: 0.06666667
+  magazineSize: 50
+  startReserveAmmo: 250
+  reloadTime: 4
+>>>>>>> Stashed changes
   autoReloadOnEmpty: 1
   firePoint: {fileID: 0}
   bulletPrefab: {fileID: 5592712660193589804, guid: 7649abd781141904fbd477d94a7ef8a2, type: 3}
