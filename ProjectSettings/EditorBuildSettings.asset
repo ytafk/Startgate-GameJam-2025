@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 0
+    path: Assets/Scenes/SampleScene.unity
+    guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/Scenes/Main_Menu.unity
+    guid: 05a36decb949b9c419a54b1837947877
+  - enabled: 1
+    path: Assets/Scenes/Arena.unity
+    guid: 3d4372b8602e5ef4283c3be82a861bd2
+  - enabled: 1
+    path: Assets/Scenes/Settings_Menu.unity
+    guid: e6bf3c71fe951344d8951eb3b447ac2d
+  - enabled: 1
+    path: Assets/Scenes/Credits.unity
+    guid: ea010026db6eded4391613ebe3ed5613
+  - enabled: 1
+    path: Assets/Scenes/BilgilendirmeMenu.unity
+    guid: 2913ae64dfc0f3f43aec7c67f690d87b
+  - enabled: 1
+    path: Assets/Scenes/BilgilendirmeMenu2.unity
+    guid: a6717de4b8ff4364bbdaaf8d551a89a0
+  - enabled: 1
+    path: Assets/Scenes/BilgilendirmePistol.unity
+    guid: 5c555ee88bcddce4193fb30a5713046f
+  - enabled: 1
+    path: Assets/Scenes/BilgilendirmeSMG.unity
+    guid: a86d5ad9a4f6c6042892e678c230075d
+  - enabled: 1
+    path: Assets/Scenes/BilgilendirmeRifle.unity
+    guid: d1c8218b6323e7048b5bf57523165a3e
+  - enabled: 1
+    path: Assets/Scenes/BilgilendirmeShotgun.unity
+    guid: a8eac4459feadcb4ab10e75a283663eb
+  - enabled: 1
+    path: Assets/Scenes/BilgilendirmeSniper.unity
+    guid: 7b6f9c663eb5d3d4da34106da95a1712
+  - enabled: 1
+    path: Assets/Scenes/BilgilendirmeMiniGun.unity
+    guid: 0838715d2cb139843923849634b99896
+  m_configObjects:
+    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+  m_UseUCBPForAssetBundles: 0
