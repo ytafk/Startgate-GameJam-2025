@@ -276,7 +276,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 4
-      m_TileSpriteIndex: 5
+      m_TileSpriteIndex: 10
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -286,7 +286,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 3
-      m_TileSpriteIndex: 3
+      m_TileSpriteIndex: 5
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -424,6 +424,8 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: 0d3e1617e61cfae4bba4a99eb6622c66, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: ffd396cd9e8f4f74a87688fbd85472e5, type: 2}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   m_TileSpriteArray:
   - m_RefCount: 2
     m_Data: {fileID: -4464905806321125599, guid: 901c80edd4097b043b71d221638f6c4b, type: 3}
@@ -431,12 +433,12 @@ Tilemap:
     m_Data: {fileID: 3617840469284878363, guid: 901c80edd4097b043b71d221638f6c4b, type: 3}
   - m_RefCount: 2
     m_Data: {fileID: -589122417, guid: 901c80edd4097b043b71d221638f6c4b, type: 3}
-  - m_RefCount: 1
-    m_Data: {fileID: -26799576, guid: 901c80edd4097b043b71d221638f6c4b, type: 3}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   - m_RefCount: 1
     m_Data: {fileID: -4367653541602271980, guid: 901c80edd4097b043b71d221638f6c4b, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: 660375518, guid: 901c80edd4097b043b71d221638f6c4b, type: 3}
+    m_Data: {fileID: -26799576, guid: 901c80edd4097b043b71d221638f6c4b, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 3501885825790660761, guid: 901c80edd4097b043b71d221638f6c4b, type: 3}
   - m_RefCount: 1
@@ -445,6 +447,8 @@ Tilemap:
     m_Data: {fileID: -6334900263745425739, guid: 901c80edd4097b043b71d221638f6c4b, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: -4642123186905474919, guid: 901c80edd4097b043b71d221638f6c4b, type: 3}
+  - m_RefCount: 1
+    m_Data: {fileID: 660375518, guid: 901c80edd4097b043b71d221638f6c4b, type: 3}
   m_TileMatrixArray:
   - m_RefCount: 14
     m_Data:
