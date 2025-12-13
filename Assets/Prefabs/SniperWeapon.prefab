@@ -46,21 +46,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SniperHitscan
   weaponName: Sniper
   pickupPrefab: {fileID: 2495772936539058319, guid: fd325c9655a5baa4f8818b7a0bb67679, type: 3}
-<<<<<<< Updated upstream
-  overloadPerHit: 20
-  maxRange: 80
-  shotCooldown: 1.1
-  magazineSize: 5
-  startReserveAmmo: 50
-  reloadTime: 4
-=======
   overloadPerHit: 21
   maxRange: 250
   shotCooldown: 1.5
   magazineSize: 5
   startReserveAmmo: 50
   reloadTime: 3
->>>>>>> Stashed changes
   autoReloadOnEmpty: 1
   firePoint: {fileID: 0}
   bulletPrefab: {fileID: 0}
@@ -73,8 +64,4 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   penetrate: 1
-<<<<<<< Updated upstream
-  maxPenetrations: 999
-=======
   maxPenetrations: 10
->>>>>>> Stashed changes

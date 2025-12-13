@@ -151,11 +151,7 @@ CircleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-<<<<<<< Updated upstream
-  m_IsTrigger: 0
-=======
   m_IsTrigger: 1
->>>>>>> Stashed changes
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -173,9 +169,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb4950faa86c1cd4996af6f57ed3fab8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Bullet
-<<<<<<< Updated upstream
-  lifeTime: 2
-=======
   overloadAmount: 4
   maxRange: 25
->>>>>>> Stashed changes

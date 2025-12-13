@@ -10,11 +10,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-<<<<<<< Updated upstream
-    <ProjectGuid>{C441D36F-241E-086E-7FD5-4F5E75447470}</ProjectGuid>
-=======
     <ProjectGuid>{7BD1BE63-49EB-6FC4-E633-1FFB6C95BDDF}</ProjectGuid>
->>>>>>> Stashed changes
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -68,28 +64,17 @@
     <Compile Include="Assets\Gameplay_Scripts\Weapons\Rifle.cs" />
     <Compile Include="Assets\Gameplay_Scripts\Weapons\SMG.cs" />
     <Compile Include="Assets\Gameplay_Scripts\Weapons\Pistol.cs" />
-<<<<<<< Updated upstream
-=======
     <Compile Include="Assets\Gameplay_Scripts\Player\PlayerMovement.cs" />
->>>>>>> Stashed changes
     <Compile Include="Assets\Gameplay_Scripts\Weapons\ShotGun.cs" />
     <Compile Include="Assets\UI_Scripts\UIManager.cs" />
     <Compile Include="Assets\Gameplay_Scripts\Weapons\MiniGun.cs" />
     <Compile Include="Assets\Gameplay_Scripts\Weapons\WeaponPickup.cs" />
-<<<<<<< Updated upstream
-    <Compile Include="Assets\Gameplay_Scripts\PlayerMovement.cs" />
-    <Compile Include="Assets\Gameplay_Scripts\Weapons\SniperRifle.cs" />
-    <Compile Include="Assets\Gameplay_Scripts\Weapons\PlayerWeaponInventory.cs" />
-    <Compile Include="Assets\Gameplay_Scripts\Weapons\Bullet.cs" />
-    <Compile Include="Assets\Gameplay_Scripts\Enemies\EnemyOverloadUI.cs" />
-=======
     <Compile Include="Assets\Gameplay_Scripts\Weapons\SniperRifle.cs" />
     <Compile Include="Assets\Gameplay_Scripts\Weapons\PlayerWeaponInventory.cs" />
     <Compile Include="Assets\Gameplay_Scripts\Weapons\Bullet.cs" />
     <Compile Include="Assets\Gameplay_Scripts\Player\PlayerHealth.cs" />
     <Compile Include="Assets\Gameplay_Scripts\Enemies\EnemyOverloadUI.cs" />
     <Compile Include="Assets\Gameplay_Scripts\Enemies\ProwlerAI.cs" />
->>>>>>> Stashed changes
     <Compile Include="Assets\Gameplay_Scripts\Enemies\Enemy.cs" />
     <Compile Include="Assets\Gameplay_Scripts\Weapons\WeaponBase.cs" />
   </ItemGroup>

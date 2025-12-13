@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "D:\\YTA\\Desktop\\Startgate GameJam 2025\\Feed the robot\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{7BD1BE63-49EB-6FC4-E633-1FFB6C95BDDF}|Assembly-CSharp.csproj|d:\\yta\\desktop\\startgate gamejam 2025\\feed the robot\\assets\\gameplay_scripts\\player\\playerhealth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BD1BE63-49EB-6FC4-E633-1FFB6C95BDDF}|Assembly-CSharp.csproj|solutionrelative:assets\\gameplay_scripts\\player\\playerhealth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{7BD1BE63-49EB-6FC4-E633-1FFB6C95BDDF}|Assembly-CSharp.csproj|d:\\yta\\desktop\\startgate gamejam 2025\\feed the robot\\assets\\gameplay_scripts\\weapons\\playerweaponinventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7BD1BE63-49EB-6FC4-E633-1FFB6C95BDDF}|Assembly-CSharp.csproj|solutionrelative:assets\\gameplay_scripts\\weapons\\playerweaponinventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -31,6 +35,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "PlayerHealth.cs",
+              "DocumentMoniker": "D:\\YTA\\Desktop\\Startgate GameJam 2025\\Feed the robot\\Assets\\Gameplay_Scripts\\Player\\PlayerHealth.cs",
+              "RelativeDocumentMoniker": "Assets\\Gameplay_Scripts\\Player\\PlayerHealth.cs",
+              "ToolTip": "D:\\YTA\\Desktop\\Startgate GameJam 2025\\Feed the robot\\Assets\\Gameplay_Scripts\\Player\\PlayerHealth.cs",
+              "RelativeToolTip": "Assets\\Gameplay_Scripts\\Player\\PlayerHealth.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-13T09:24:29.148Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "PlayerWeaponInventory.cs",
               "DocumentMoniker": "D:\\YTA\\Desktop\\Startgate GameJam 2025\\Feed the robot\\Assets\\Gameplay_Scripts\\Weapons\\PlayerWeaponInventory.cs",
               "RelativeDocumentMoniker": "Assets\\Gameplay_Scripts\\Weapons\\PlayerWeaponInventory.cs",
@@ -43,7 +60,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "ShotGun.cs",
               "DocumentMoniker": "D:\\YTA\\Desktop\\Startgate GameJam 2025\\Feed the robot\\Assets\\Gameplay_Scripts\\Weapons\\ShotGun.cs",
               "RelativeDocumentMoniker": "Assets\\Gameplay_Scripts\\Weapons\\ShotGun.cs",
@@ -55,7 +72,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Bullet.cs",
               "DocumentMoniker": "D:\\YTA\\Desktop\\Startgate GameJam 2025\\Feed the robot\\Assets\\Gameplay_Scripts\\Weapons\\Bullet.cs",
               "RelativeDocumentMoniker": "Assets\\Gameplay_Scripts\\Weapons\\Bullet.cs",
@@ -67,7 +84,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "WeaponBase.cs",
               "DocumentMoniker": "D:\\YTA\\Desktop\\Startgate GameJam 2025\\Feed the robot\\Assets\\Gameplay_Scripts\\Weapons\\WeaponBase.cs",
               "RelativeDocumentMoniker": "Assets\\Gameplay_Scripts\\Weapons\\WeaponBase.cs",

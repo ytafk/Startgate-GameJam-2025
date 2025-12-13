@@ -47,29 +47,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SMG
   weaponName: SMG
   pickupPrefab: {fileID: 1225396264113635353, guid: 75217b046d5efb24384858ccbc8886f7, type: 3}
-<<<<<<< Updated upstream
-  overloadPerHit: 4
-  maxRange: 20
-  shotCooldown: 0.05
-  magazineSize: 16
-  startReserveAmmo: 80
-=======
   overloadPerHit: 6
   maxRange: 15
   shotCooldown: 0.05
   magazineSize: 20
   startReserveAmmo: 180
->>>>>>> Stashed changes
   reloadTime: 1.5
   autoReloadOnEmpty: 1
   firePoint: {fileID: 0}
   bulletPrefab: {fileID: 5592712660193589804, guid: 7649abd781141904fbd477d94a7ef8a2, type: 3}
   cam: {fileID: 0}
-<<<<<<< Updated upstream
-  bulletSpeed: 12
-=======
   bulletSpeed: 14
->>>>>>> Stashed changes
   ammoInMag: 0
   reserveAmmo: 0
   isReloading: 0

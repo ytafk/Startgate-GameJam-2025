@@ -148,8 +148,6 @@ public abstract class WeaponBase : MonoBehaviour
         var b = Instantiate(bulletPrefab, firePoint.position, Quaternion.identity);
         b.linearVelocity = dir * bulletSpeed;
 
-<<<<<<< Updated upstream
-=======
 
         var bullet = b.GetComponent<Bullet>();
         if (bullet != null)
@@ -159,7 +157,6 @@ public abstract class WeaponBase : MonoBehaviour
             
         }
 
->>>>>>> Stashed changes
         // ✅ ÖNEMLİ:
         // Bullet scriptinde overload/range destekliyorsan burada set et:
         // var bullet = b.GetComponent<Bullet>();
