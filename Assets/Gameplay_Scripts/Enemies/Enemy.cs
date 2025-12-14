@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class EnemyRobot : MonoBehaviour
@@ -6,11 +7,16 @@ public class EnemyRobot : MonoBehaviour
     public float maxOverload = 42f;
     public float currentOverload = 0f;
 
+
     [Header("Optional")]
     public float overloadDecayPerSecond = 0f; // istersek zamanla azalsýn (þimdilik 0)
 
     [Header("FX")]
     public GameObject explosionPrefab;
+
+
+    public static event Action<EnemyRobot> OnAnyEnemyDied;
+
 
     public void AddOverload(float amount)
     {
@@ -40,8 +46,17 @@ public class EnemyRobot : MonoBehaviour
     {
         if (explosionPrefab)
             Instantiate(explosionPrefab, transform.position, Quaternion.identity);
+        
+        var dropper = GetComponent<EnemyLootDropper>();
+        if (dropper != null) dropper.Drop();
 
+        OnAnyEnemyDied?.Invoke(this);
         Destroy(gameObject);
+        GetComponent<EnemyAnimDriver>()?.SetDead();
+        GetComponent<ProwlerAI>().enabled = false;
+        GetComponent<Rigidbody2D>().linearVelocity = Vector2.zero;
+        GetComponent<Collider2D>().enabled = false; // istersen
+
     }
 
     // UI baðlantýsý
@@ -57,4 +72,5 @@ public class EnemyRobot : MonoBehaviour
         if (ui)
             ui.SetValue(currentOverload / maxOverload);
     }
+
 }

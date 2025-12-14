@@ -1,4 +1,4 @@
-using System.Collections;
+ï»¿using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -14,8 +14,11 @@ public class PlayerMovement2D_NewInput : MonoBehaviour
     public float dashCooldown = 0.45f;
 
     [Header("Slide/Drag")]
-    public float normalDrag = 6f;   // yürürken daha az kay
-    public float dashDrag = 0.5f;   // dash sonrasý biraz kay
+    public float normalDrag = 6f;   // yÃ¼rÃ¼rken daha az kay
+    public float dashDrag = 0.5f;   // dash sonrasÄ± biraz kay
+
+    [Header("Animation")]
+    public PlayerAnimDriver anim;   // PlayerAnimDriver scriptin (Player Ã¼zerinde olacak)
 
     private Rigidbody2D rb;
     private Vector2 moveInput;
@@ -28,6 +31,8 @@ public class PlayerMovement2D_NewInput : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         rb.gravityScale = 0f;
+
+        if (!anim) anim = GetComponent<PlayerAnimDriver>(); // otomatik bul
     }
 
     // Move (WASD)
@@ -35,16 +40,14 @@ public class PlayerMovement2D_NewInput : MonoBehaviour
     {
         moveInput = value.Get<Vector2>();
 
-        // Son yönü hatýrla (dash yönü için)
+        // Son yÃ¶nÃ¼ hatÄ±rla (dash yÃ¶nÃ¼ iÃ§in)
         if (moveInput.sqrMagnitude > 0.01f)
             lastMoveDir = moveInput.normalized;
-        
     }
 
     // Dash (Space)
     public void OnDash(InputValue value)
     {
-        // Button basýldý aný (basýlý tutmaya deðil)
         if (!value.isPressed) return;
 
         if (canDash && !isDashing)
@@ -55,7 +58,6 @@ public class PlayerMovement2D_NewInput : MonoBehaviour
     {
         if (isDashing) return;
 
-        // normal hareket
         rb.linearDamping = normalDrag;
         rb.linearVelocity = moveInput.normalized * moveSpeed;
     }
@@ -65,7 +67,9 @@ public class PlayerMovement2D_NewInput : MonoBehaviour
         canDash = false;
         isDashing = true;
 
-        // Dash anýnda kaymayý artýr (drag düþür)
+        // âœ… animasyonu baÅŸlat
+        if (anim) anim.SetDashing(true);
+
         rb.linearDamping = dashDrag;
 
         Vector2 dir = (moveInput.sqrMagnitude > 0.01f) ? moveInput.normalized : lastMoveDir;
@@ -75,9 +79,10 @@ public class PlayerMovement2D_NewInput : MonoBehaviour
 
         isDashing = false;
 
-        // Cooldown
+        // âœ… animasyonu bitir
+        if (anim) anim.SetDashing(false);
+
         yield return new WaitForSeconds(dashCooldown);
         canDash = true;
     }
 }
-

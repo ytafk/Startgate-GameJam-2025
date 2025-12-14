@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8415799345855782721}
   - component: {fileID: 522205296532512003}
   - component: {fileID: 7830569676504254370}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -84,7 +84,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6473353714584089128}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Handle Slide Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -122,7 +122,7 @@ GameObject:
   - component: {fileID: 305298956702461269}
   - component: {fileID: 5700877052359079537}
   - component: {fileID: 2254676805687793826}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Handle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -196,7 +196,7 @@ GameObject:
   m_Component:
   - component: {fileID: 367724331021407830}
   - component: {fileID: 8267585195412052010}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: OverloadBar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -243,7 +243,7 @@ GameObject:
   - component: {fileID: 1849472575381478335}
   - component: {fileID: 2233392250739332318}
   - component: {fileID: 695717376874471596}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -316,7 +316,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6874571510665365277}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Fill Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -355,7 +355,7 @@ GameObject:
   - component: {fileID: 1247965080145010814}
   - component: {fileID: 4555098764570612869}
   - component: {fileID: 6849387814915117858}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -459,7 +459,10 @@ GameObject:
   - component: {fileID: 9217944847772005342}
   - component: {fileID: 7591655217269560961}
   - component: {fileID: 2965951370568223990}
-  m_Layer: 8
+  - component: {fileID: 7060756778860000438}
+  - component: {fileID: -1008928766276003677}
+  - component: {fileID: 1721504855997257330}
+  m_Layer: 6
   m_Name: Prowler
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -529,7 +532,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 10
   m_MaskInteraction: 0
   m_Sprite: {fileID: 372622031870172341, guid: 89cc80f5e998f5341ba1b03d9c78a15e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -596,28 +599,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7efac1636e5a48148a53db8cf4d35f1f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ProwlerAI
-  target: {fileID: 0}
+  target: {fileID: 8859096765029265838, guid: 75d4cf4c0c242254ba0746cb177d2abc, type: 3}
+  playerTag: Player
   stopDistance: 0.25
-  animator: {fileID: 0}
-  attackRange: 0.65
-  attackCooldown: 0.55
-  attackLockTime: 0.25
-  damageWindowDuration: 0.12
-  damageRadius: 0.35
-  playerMask:
-    serializedVersion: 2
-    m_Bits: 1
-  baseSpeed: 2.5
+  baseSpeed: 3
   baseDamage: 6
   maxOverload: 42
-  maxSpeedMultiplier: 2.5
+  maxSpeedMultiplier: 2.8
   maxDamageMultiplier: 2
   hitInterval: 0.45
-  separationRadius: 0.6
-  separationStrength: 2.5
-  enemyMask:
-    serializedVersion: 2
-    m_Bits: 0
 --- !u!58 &2965951370568223990
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -654,6 +644,58 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0.21133333}
   m_Radius: 0.5
+--- !u!95 &7060756778860000438
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5872584792879771816}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4574cad31ad7442489990c259610489f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &-1008928766276003677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5872584792879771816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1dab3fe975a1e6e4eb7ef473063daa3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyAnimDriver
+  animator: {fileID: 7060756778860000438}
+  rb: {fileID: 830650597723576881}
+--- !u!114 &1721504855997257330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5872584792879771816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4c7900d48f85934d97db383fb59f1f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyLootDropper
+  table: {fileID: 11400000, guid: bda0f5d71c105494ab093c18b04e08e3, type: 2}
+  scatterRadius: 0.6
+  popForce: 1.5
+  usePhysicsPop: 1
 --- !u!1 &6072756581470146839
 GameObject:
   m_ObjectHideFlags: 0
@@ -664,7 +706,7 @@ GameObject:
   m_Component:
   - component: {fileID: 989372910448410110}
   - component: {fileID: 8038940865440793555}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Slider
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -4,13 +4,12 @@ using UnityEngine.InputSystem;
 public class Shotgun : WeaponBase
 {
     [Header("Shotgun")]
-    public int pelletCount = 8;              // aynı anda çıkan pellet sayısı
-    public float spreadAngle = 18f;          // toplam yayılma açısı (derece)
-    public float pelletSpeedMultiplier = 1f; // istersen 0.9 gibi
+    public int pelletCount = 8;
+    public float spreadAngle = 18f;
+    public float pelletSpeedMultiplier = 1f;
 
     public override void OnPress()
     {
-        // ✅ Ammo / Reload / Cooldown kontrolü WeaponBase’te
         if (!CanShoot()) return;
 
         FireShotgun();
@@ -19,12 +18,10 @@ public class Shotgun : WeaponBase
 
     public override void OnRelease() { }
 
-    private void FireShotgun()
+    void FireShotgun()
     {
         Vector2 mouseScreen = Mouse.current.position.ReadValue();
-        Vector3 mouseWorld = cam.ScreenToWorldPoint(new Vector3(
-            mouseScreen.x, mouseScreen.y, -cam.transform.position.z));
-
+        Vector3 mouseWorld = cam.ScreenToWorldPoint(new Vector3(mouseScreen.x, mouseScreen.y, -cam.transform.position.z));
         Vector2 baseDir = ((Vector2)mouseWorld - (Vector2)firePoint.position).normalized;
 
         int count = Mathf.Max(1, pelletCount);
@@ -40,17 +37,16 @@ public class Shotgun : WeaponBase
             var rb = Instantiate(bulletPrefab, firePoint.position, Quaternion.identity);
             rb.linearVelocity = dir * (bulletSpeed * pelletSpeedMultiplier);
 
-            // ✅ Silahın overload + range değerlerini mermiye aktar
-            var bullet = rb.GetComponent<Bullet>();
-            if (bullet != null)
+            var b = rb.GetComponent<Bullet>();
+            if (b != null)
             {
-                bullet.overloadAmount = overloadPerHit;
-                bullet.maxRange = maxRange;
+                b.overloadAmount = overloadPerHit;
+                b.maxRange = maxRange;
             }
         }
     }
 
-    private Vector2 Rotate(Vector2 v, float degrees)
+    static Vector2 Rotate(Vector2 v, float degrees)
     {
         float rad = degrees * Mathf.Deg2Rad;
         float sin = Mathf.Sin(rad);

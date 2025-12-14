@@ -3,93 +3,53 @@ using UnityEngine;
 
 public class SMG : WeaponBase
 {
-    [Header("SMG (Burst)")]
-    public int burstCount = 4;           // Burst içindeki mermi sayısı
-    public float burstRate = 0.05f;      // Burst içi hız (çok hızlı)
-    public float burstCooldown = 0.35f;  // Burst sonrası bekleme
+    [Header("Burst")]
+    public int burstCount = 4;
+    public float burstRate = 0.05f;
+    public float burstCooldown = 0.35f;
 
-    private bool isBursting;
-    private bool canBurst = true;
-
-    private Coroutine burstCoroutine;
-
-    protected override void Awake()
-    {
-        base.Awake();
-        SyncCooldownFromBurstRate();
-    }
-
-    void OnValidate()
-    {
-        SyncCooldownFromBurstRate();
-    }
-
-    private void SyncCooldownFromBurstRate()
-    {
-        // WeaponBase'in atış arası beklemesini burstRate'e eşitle
-        shotCooldown = Mathf.Max(0.01f, burstRate);
-    }
+    bool bursting;
+    bool canBurst = true;
+    Coroutine co;
 
     public override void OnPress()
     {
-        if (!canBurst || isBursting) return;
+        if (!canBurst || bursting) return;
 
-        // Basınca anında burst başlat
-        if (burstCoroutine != null)
-        {
-            StopCoroutine(burstCoroutine);
-            burstCoroutine = null;
-        }
-
-        burstCoroutine = StartCoroutine(BurstRoutine());
+        if (co != null) { StopCoroutine(co); co = null; }
+        co = StartCoroutine(BurstRoutine());
     }
 
-    public override void OnRelease()
-    {
-        // Burst silahında release şart değil
-    }
+    public override void OnRelease() { }
 
-    private IEnumerator BurstRoutine()
+    IEnumerator BurstRoutine()
     {
-        isBursting = true;
+        bursting = true;
         canBurst = false;
 
-        int shotsFired = 0;
+        int count = Mathf.Max(1, burstCount);
 
-        for (int i = 0; i < burstCount; i++)
+        for (int i = 0; i < count; i++)
         {
-            // ✅ Ammo/reload/cooldown kontrolü WeaponBase'te
-            if (!CanShoot())
-                break;
-
-            FireOnce();
-            ConsumeAmmoAndSetCooldown();
-            shotsFired++;
-
-            // burstRate zaten shotCooldown'a eşit, yine de burst hissi için bekletiyoruz
-            yield return new WaitForSeconds(burstRate);
+            // her pellet gibi: tek tek CanShoot kontrolü
+            if (!TryFire()) break;
+            yield return new WaitForSeconds(Mathf.Max(0.01f, burstRate));
         }
 
-        isBursting = false;
+        bursting = false;
 
-        // Burst sonrası bekleme
-        yield return new WaitForSeconds(burstCooldown);
+        yield return new WaitForSeconds(Mathf.Max(0.01f, burstCooldown));
         canBurst = true;
 
-        burstCoroutine = null;
+        co = null;
     }
 
     protected override void OnDisable()
     {
         base.OnDisable();
-
-        if (burstCoroutine != null)
-        {
-            StopCoroutine(burstCoroutine);
-            burstCoroutine = null;
-        }
-
-        isBursting = false;
+        bursting = false;
         canBurst = true;
+        if (co != null) { StopCoroutine(co); co = null; }
     }
 }
+

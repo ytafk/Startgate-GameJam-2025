@@ -35,38 +35,43 @@
 //    public abstract void OnPress();
 //    public abstract void OnRelease();
 //}
+using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public abstract class WeaponBase : MonoBehaviour
 {
     [Header("Info")]
-    public string weaponName = "Silah";
-    public WeaponPickup pickupPrefab;
-
-    [Header("Combat (Inspector)")]
-    public float overloadPerHit = 3f;     // düşmana eklenecek overload (hasar gibi düşün)
-    public float maxRange = 25f;          // merminin/hitscan'in max menzili
-    public float shotCooldown = 0.2f;     // atışlar arası bekleme (silaha göre değiştir)
-
-    [Header("Ammo (Inspector)")]
-    public int magazineSize = 12;         // şarjör kapasitesi
-    public int startReserveAmmo = 48;     // yerden alınca yedek mermi
-    public float reloadTime = 1.2f;       // şarjör değiştirme süresi
-    public bool autoReloadOnEmpty = true; // mermi bitince otomatik reload başlasın mı?
+    public string weaponName = "Weapon";
+    public WeaponPickup pickupPrefab; // sende varsa kalsın
 
     [Header("Refs")]
     public Transform firePoint;
     public Rigidbody2D bulletPrefab;
     public Camera cam;
 
-    [Header("Bullet (Inspector)")]
+    [Header("Combat")]
+    public float overloadPerHit = 3f;
+    public float maxRange = 25f;
+
+    [Header("Bullet")]
     public float bulletSpeed = 18f;
 
-    // Runtime state (hilelenmesin diye silah instance'ında durur)
-    [HideInInspector] public int ammoInMag;
-    [HideInInspector] public int reserveAmmo;
-    [HideInInspector] public bool isReloading;
+    [Header("Timing")]
+    public float shotCooldown = 0.12f;
+
+    [Header("Ammo")]
+    public int magazineSize = 30;
+    public int startReserveAmmo = 90;
+    public float reloadTime = 1.6f;
+    public bool autoReloadOnEmpty = true;
+
+    [Header("Debug")]
+    public bool logShootBlock;
+
+    protected int ammoInMag;
+    protected int reserveAmmo;
+    protected bool isReloading;
 
     float nextShotTime;
     float reloadEndTime;
@@ -74,15 +79,64 @@ public abstract class WeaponBase : MonoBehaviour
     protected virtual void Awake()
     {
         if (!cam) cam = Camera.main;
-
-        // Silah instantiate edilince başlangıç mermileri
         ammoInMag = magazineSize;
         reserveAmmo = startReserveAmmo;
     }
 
-    protected virtual void Update()
+    protected virtual void OnEnable()
+    {
+        // silah tekrar aktif olunca reload/shot state’i düzgün kalsın
+    }
+
+    protected virtual void OnDisable()
+    {
+        // child sınıflar coroutine temizleyecek
+    }
+
+    // ✅ Silah kapalı olsa bile inventory burayı çağırabilir (reload timer tamamlamak için)
+    public void Tick()
     {
         TickReload();
+    }
+
+    void TickReload()
+    {
+        if (isReloading && Time.time >= reloadEndTime)
+            FinishReload();
+    }
+
+    protected bool CanShoot()
+    {
+        TickReload();
+
+        if (isReloading)
+        {
+            if (logShootBlock) Debug.Log($"{weaponName} blocked: reloading");
+            return false;
+        }
+
+        if (Time.time < nextShotTime)
+        {
+            if (logShootBlock) Debug.Log($"{weaponName} blocked: cooldown");
+            return false;
+        }
+
+        if (ammoInMag > 0) return true;
+
+        if (autoReloadOnEmpty)
+            StartReload();
+
+        if (logShootBlock) Debug.Log($"{weaponName} blocked: empty");
+        return false;
+    }
+
+    protected void ConsumeAmmoAndSetCooldown()
+    {
+        ammoInMag = Mathf.Max(0, ammoInMag - 1);
+        nextShotTime = Time.time + Mathf.Max(0.01f, shotCooldown);
+
+        if (autoReloadOnEmpty && ammoInMag == 0)
+            StartReload();
     }
 
     public void StartReload()
@@ -94,50 +148,33 @@ public abstract class WeaponBase : MonoBehaviour
         if (reserveAmmo <= 0) return;
 
         isReloading = true;
-        reloadEndTime = Time.time + reloadTime;
+        reloadEndTime = Time.time + Mathf.Max(0.01f, reloadTime);
     }
 
-    void TickReload()
+    void FinishReload()
     {
-        if (!isReloading) return;
+        isReloading = false;
 
-        if (Time.time >= reloadEndTime)
-        {
-            int need = magazineSize - ammoInMag;
-            int take = Mathf.Min(need, reserveAmmo);
+        int need = magazineSize - ammoInMag;
+        int take = Mathf.Min(need, reserveAmmo);
 
-            ammoInMag += take;
-            reserveAmmo -= take;
-            isReloading = false;
-        }
-    }
-    // Inventory, silah kapalı olsa bile bunu çağıracak
-    public void Tick()
-    {
-        TickReload();  // sende reload'u bitiren fonksiyon adı neyse onu çağır
+        ammoInMag += take;
+        reserveAmmo -= take;
     }
 
-    protected bool CanShoot()
+    // 🔥 DIŞARIDAN TEK SEFERLİK ATEŞ (anim event / player / inventory burayı çağırabilir)
+    public virtual bool TryFire()
     {
-        TickReload();
+        if (!CanShoot()) return false;
 
-        if (isReloading) return false;
-        if (Time.time < nextShotTime) return false;
-
-        if (ammoInMag <= 0)
-        {
-            if (autoReloadOnEmpty) StartReload();
-            return false;
-        }
-
+        FireOnce();
+        ConsumeAmmoAndSetCooldown();
         return true;
     }
 
-    protected void ConsumeAmmoAndSetCooldown()
-    {
-        ammoInMag = Mathf.Max(0, ammoInMag - 1);
-        nextShotTime = Time.time + Mathf.Max(0.01f, shotCooldown);
-    }
+    // 🔥 DIŞARIDAN “BASILDI / BIRAKILDI” (full-auto silahlar için)
+    public void PressFire() => OnPress();
+    public void ReleaseFire() => OnRelease();
 
     protected void FireOnce()
     {
@@ -145,33 +182,27 @@ public abstract class WeaponBase : MonoBehaviour
         Vector3 mouseWorld = cam.ScreenToWorldPoint(new Vector3(mouseScreen.x, mouseScreen.y, -cam.transform.position.z));
         Vector2 dir = ((Vector2)mouseWorld - (Vector2)firePoint.position).normalized;
 
-        var b = Instantiate(bulletPrefab, firePoint.position, Quaternion.identity);
-        b.linearVelocity = dir * bulletSpeed;
+        var rb = Instantiate(bulletPrefab, firePoint.position, Quaternion.identity);
+        rb.linearVelocity = dir * bulletSpeed;
 
-
-        var bullet = b.GetComponent<Bullet>();
-        if (bullet != null)
+        // ✅ Bullet scriptin overload/range alıyorsa buradan set et
+        var b = rb.GetComponent<Bullet>();
+        if (b != null)
         {
-            bullet.overloadAmount = overloadPerHit;
-            bullet.maxRange = maxRange;
-            
+            b.overloadAmount = overloadPerHit;
+            b.maxRange = maxRange;
         }
-
-        // ✅ ÖNEMLİ:
-        // Bullet scriptinde overload/range destekliyorsan burada set et:
-        // var bullet = b.GetComponent<Bullet>();
-        // if (bullet) bullet.Configure(overloadPerHit, maxRange);
+    }
+    public void AddReserveAmmo(int amount)
+    {
+        if (amount <= 0) return;
+        reserveAmmo += amount;
     }
 
-    // input
+
+    // Silahların kendi input davranışı
     public abstract void OnPress();
     public abstract void OnRelease();
-
-    protected virtual void OnDisable()
-    {
-        // Slot değişiminde reload/cooldown state'i bozulmasın diye
-        // isReloading aynen kalsın (bitince TickReload tamamlar)
-    }
 }
 
 
