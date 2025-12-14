@@ -12,10 +12,10 @@ EditorBuildSettings:
     path: Assets/Scenes/Main_Menu.unity
     guid: 05a36decb949b9c419a54b1837947877
   - enabled: 1
-    path: Assets/Scenes/level1.unity
+    path: Assets/Scenes/level12.unity
     guid: bc2685a8bf0e06341b0fee6dea8ae376
   - enabled: 0
-    path: Assets/Scenes/Arena.unity
+    path: Assets/Scenes/Arena12.unity
     guid: 3d4372b8602e5ef4283c3be82a861bd2
   - enabled: 1
     path: Assets/Scenes/Settings_Menu.unity
