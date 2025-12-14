@@ -1139,7 +1139,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2954e101840076f4ca96f8c34ed8cc97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  sceneName: Arena
+  sceneName: level1
   animator: {fileID: 0}
   image: {fileID: 0}
   defaultSprite: {fileID: 0}

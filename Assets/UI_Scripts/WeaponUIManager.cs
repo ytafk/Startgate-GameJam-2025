@@ -1,73 +1,201 @@
+ï»¿//using UnityEngine;
+//using UnityEngine.UI;
+//using TMPro;
+
+//public class WeaponUIManager : MonoBehaviour
+//{
+//    // Singleton
+//    public static WeaponUIManager Instance;
+
+//    [Header("UI BileÅŸenleri (Canvas'tan sÃ¼rÃ¼kle)")]
+//    public GameObject infoPanel;
+//    public Image weaponIconImage;
+//    public TextMeshProUGUI nameText;
+//    public TextMeshProUGUI ammoText;
+
+//    [Header("Score UI")]
+//    public TextMeshProUGUI scoreText; // 1. BURAYA SKOR YAZISINI SÃœRÃœKLEYECEKSÄ°N
+//    private int currentScore = 0;     // Mevcut puanÄ± hafÄ±zada tutan deÄŸiÅŸken
+
+//    // Takip edilen silah
+//    private WeaponBase currentWeapon;
+//    private WeaponIconData currentIconData;
+
+//    void Awake()
+//    {
+//        Instance = this;
+//        if (infoPanel) infoPanel.SetActive(false);
+
+//        // Oyun baÅŸlarken skoru sÄ±fÄ±rla ve ekrana yaz
+//        UpdateScoreUI();
+//    }
+
+//    void Update()
+//    {
+//        if (currentWeapon != null && infoPanel.activeSelf)
+//        {
+//            ammoText.text = $"{currentWeapon.ammoInMag} / {currentWeapon.reserveAmmo}";
+
+//            if (currentWeapon.ammoInMag <= 0) ammoText.color = Color.red;
+//            else ammoText.color = Color.white;
+//        }
+//    }
+
+//    // --- YENÄ° EKLENEN SKOR FONKSÄ°YONU ---
+//    public void AddScore(int amount)
+//    {
+//        currentScore += amount; // Gelen puanÄ± ekle
+//        UpdateScoreUI();        // Ekrana yazdÄ±r
+//    }
+
+//    void UpdateScoreUI()
+//    {
+//        if (scoreText != null)
+//        {
+//            // Ekranda "SCORE: 42" gibi gÃ¶rÃ¼necek
+//            scoreText.text = "SCORE: " + currentScore.ToString();
+//        }
+//    }
+//    // -------------------------------------
+
+//    public void UpdateCurrentWeapon(WeaponBase newWeapon)
+//    {
+//        currentWeapon = newWeapon;
+
+//        if (currentWeapon != null)
+//        {
+//            currentIconData = currentWeapon.GetComponent<WeaponIconData>();
+
+//            if (currentIconData != null)
+//            {
+//                weaponIconImage.sprite = currentIconData.icon;
+//                nameText.text = currentIconData.displayName;
+//                weaponIconImage.preserveAspect = true;
+//                infoPanel.SetActive(true);
+//            }
+//            else
+//            {
+//                Debug.LogWarning("Bu silahta WeaponIconData scripti unutulmuÅŸ!");
+//            }
+//        }
+//        else
+//        {
+//            infoPanel.SetActive(false);
+//        }
+//    }
+//}
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
 public class WeaponUIManager : MonoBehaviour
 {
-    // Singleton: Her yerden eriþebilmek için
+    // Singleton
     public static WeaponUIManager Instance;
 
-    [Header("UI Bileþenleri (Canvas'tan sürükle)")]
-    public GameObject infoPanel;      // Açýlýp kapanacak panel
-    public Image weaponIconImage;     // Silahýn resminin görüneceði Image
-    public TextMeshProUGUI nameText;  // Silah ismi
-    public TextMeshProUGUI ammoText;  // Mermi sayýsý (12/48 gibi)
+    [Header("UI BileÅŸenleri")]
+    public GameObject infoPanel;
+    public Image weaponIconImage;
+    public TextMeshProUGUI nameText;
+    public TextMeshProUGUI ammoText;
 
-    // Takip edilen silah (O an elindeki silah)
+    [Header("Score UI")]
+    public TextMeshProUGUI scoreText;      // Mevcut Skor YazÄ±sÄ±
+    public TextMeshProUGUI highScoreText;  // âœ… YENÄ°: En YÃ¼ksek Skor YazÄ±sÄ±
+
+    private int currentScore = 0;
+    private int highScore = 0;             // HafÄ±zadaki en yÃ¼ksek skor
+
+    // Takip edilen silah
     private WeaponBase currentWeapon;
     private WeaponIconData currentIconData;
 
     void Awake()
     {
         Instance = this;
-        // Baþlangýçta paneli gizle
         if (infoPanel) infoPanel.SetActive(false);
+
+        // âœ… Oyun aÃ§Ä±lÄ±nca kayÄ±tlÄ± en yÃ¼ksek skoru yÃ¼kle
+        // EÄŸer kayÄ±t yoksa 0 kabul et
+        highScore = PlayerPrefs.GetInt("HighScore", 0);
+
+        UpdateScoreUI();
     }
 
     void Update()
     {
-        // Eðer elimizde bir silah varsa, mermi bilgisini sürekli güncelle
         if (currentWeapon != null && infoPanel.activeSelf)
         {
-            // WeaponBase'deki deðiþkenlerin public olduðu için direkt okuyabiliriz
             ammoText.text = $"{currentWeapon.ammoInMag} / {currentWeapon.reserveAmmo}";
 
-            // Mermi biterse yazýyý kýrmýzý yap (Opsiyonel görsel güzellik)
             if (currentWeapon.ammoInMag <= 0) ammoText.color = Color.red;
             else ammoText.color = Color.white;
         }
     }
 
-    // BU FONKSÝYONU SÝLAH DEÐÝÞTÝRÝNCE ÇAÐIRACAKSIN
+    public void AddScore(int amount)
+    {
+        currentScore += amount;
+
+        // âœ… EÄŸer mevcut skor, rekoru geÃ§erse kaydet
+        if (currentScore > highScore)
+        {
+            highScore = currentScore;
+
+            // Bilgisayara/Telefona kaydet
+            PlayerPrefs.SetInt("HighScore", highScore);
+            PlayerPrefs.Save();
+        }
+
+        UpdateScoreUI();
+    }
+
+    void UpdateScoreUI()
+    {
+        // Mevcut Skoru Yaz
+        if (scoreText != null)
+        {
+            scoreText.text = "SCORE: " + currentScore.ToString();
+        }
+
+        // âœ… En YÃ¼ksek Skoru Yaz
+        if (highScoreText != null)
+        {
+            highScoreText.text = "BEST: " + highScore.ToString();
+        }
+    }
+
     public void UpdateCurrentWeapon(WeaponBase newWeapon)
     {
         currentWeapon = newWeapon;
 
         if (currentWeapon != null)
         {
-            // Silahýn üzerindeki o yeni eklediðimiz "IconData" scriptini buluyoruz
             currentIconData = currentWeapon.GetComponent<WeaponIconData>();
 
             if (currentIconData != null)
             {
-                // Verileri UI'a bas
                 weaponIconImage.sprite = currentIconData.icon;
                 nameText.text = currentIconData.displayName;
-
-                // Resmi düzgün oranla (sünmemesi için)
                 weaponIconImage.preserveAspect = true;
-
-                infoPanel.SetActive(true); // Paneli aç
+                infoPanel.SetActive(true);
             }
             else
             {
-                Debug.LogWarning("Bu silahta WeaponIconData scripti unutulmuþ!");
+                Debug.LogWarning("Bu silahta WeaponIconData eksik!");
             }
         }
         else
         {
-            // Silah yoksa paneli kapat
             infoPanel.SetActive(false);
         }
+    }
+
+    // Test iÃ§in: Skoru sÄ±fÄ±rlamak istersen bu fonksiyonu bir butona baÄŸlayabilirsin
+    public void ResetHighScore()
+    {
+        PlayerPrefs.DeleteKey("HighScore");
+        highScore = 0;
+        UpdateScoreUI();
     }
 }

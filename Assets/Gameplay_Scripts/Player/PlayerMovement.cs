@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -14,8 +14,11 @@ public class PlayerMovement2D_NewInput : MonoBehaviour
     public float dashCooldown = 0.45f;
 
     [Header("Slide/Drag")]
-    public float normalDrag = 6f;   // y�r�rken daha az kay
-    public float dashDrag = 0.5f;   // dash sonras� biraz kay
+    public float normalDrag = 6f;    // Yürürken daha az kayma (sürtünme)
+    public float dashDrag = 0.5f;    // Dash sırasında daha akışkan kayma
+
+    [Header("Animation")]
+    public PlayerAnimDriver anim;    // Animasyonları yönetecek script referansı
 
     private Rigidbody2D rb;
     private Vector2 moveInput;
@@ -27,24 +30,26 @@ public class PlayerMovement2D_NewInput : MonoBehaviour
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
-        rb.gravityScale = 0f;
+        rb.gravityScale = 0f; // Top-down oyun olduğu için yerçekimi kapalı
+
+        // Eğer Inspector'dan atanmadıysa otomatik bulmayı dene
+        if (!anim) anim = GetComponent<PlayerAnimDriver>();
     }
 
-    // Move (WASD)
+    // Input System: Move (WASD)
     public void OnMove(InputValue value)
     {
         moveInput = value.Get<Vector2>();
 
-        // Son y�n� hat�rla (dash y�n� i�in)
+        // Hareket varsa son yönü hatırla (Dash atarken duruyorsak bu yöne atılsın diye)
         if (moveInput.sqrMagnitude > 0.01f)
             lastMoveDir = moveInput.normalized;
-        
     }
 
-    // Dash (Space)
+    // Input System: Dash (Space)
     public void OnDash(InputValue value)
     {
-        // Button bas�ld� an� (bas�l� tutmaya de�il)
+        // Sadece tuşa basıldığı an çalışsın (basılı tutarken değil)
         if (!value.isPressed) return;
 
         if (canDash && !isDashing)
@@ -53,11 +58,12 @@ public class PlayerMovement2D_NewInput : MonoBehaviour
 
     void FixedUpdate()
     {
+        // Dash atarken normal hareket kodunu çalıştırma
         if (isDashing) return;
 
-        // normal hareket
-        rb.linearDamping = normalDrag;
-        rb.linearVelocity = moveInput.normalized * moveSpeed;
+        // Normal hareket fiziği
+        rb.linearDamping = normalDrag; // Unity 6 öncesi için rb.drag kullanın
+        rb.linearVelocity = moveInput.normalized * moveSpeed; // Unity 6 öncesi için rb.velocity kullanın
     }
 
     private IEnumerator DashRoutine()
@@ -65,19 +71,26 @@ public class PlayerMovement2D_NewInput : MonoBehaviour
         canDash = false;
         isDashing = true;
 
-        // Dash an�nda kaymay� art�r (drag d���r)
+        // ✅ Animasyonu Başlat
+        if (anim) anim.SetDashing(true);
+
+        // Dash fiziği: Sürtünmeyi azalt, hızı artır
         rb.linearDamping = dashDrag;
 
+        // Eğer şu an bir yöne basıyorsak oraya, basmıyorsak son baktığımız yöne dash at
         Vector2 dir = (moveInput.sqrMagnitude > 0.01f) ? moveInput.normalized : lastMoveDir;
         rb.linearVelocity = dir * dashSpeed;
 
+        // Dash süresi kadar bekle
         yield return new WaitForSeconds(dashDuration);
 
         isDashing = false;
 
-        // Cooldown
+        // ✅ Animasyonu Bitir
+        if (anim) anim.SetDashing(false);
+
+        // Tekrar dash atabilmek için cooldown süresini bekle
         yield return new WaitForSeconds(dashCooldown);
         canDash = true;
     }
 }
-
