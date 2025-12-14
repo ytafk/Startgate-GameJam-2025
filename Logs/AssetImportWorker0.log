@@ -2,10 +2,17 @@
 Built from '6000.3/staging' branch; Version is '6000.3.0f1 (d1870ce95baf) revision 13731596'; Using compiler version '194234433'; Build Type 'Release'
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 [Licensing::IpcConnector] Successfully connected to: "LicenseClient-YTA" at "2025-12-12T14:57:25.6161287Z"
 OS: 'Windows 11  (10.0.26100) 64bit Professional' Language: 'tr' Physical Memory: 14029 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
 Date: 2025-12-12T14:57:25Z
+=======
+OS: 'Windows 11  (10.0.26100) 64bit Professional' Language: 'tr' Physical Memory: 14029 MB
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-YTA" at "2025-12-13T12:00:10.3983082Z"
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
+Date: 2025-12-13T12:00:10Z
+>>>>>>> Stashed changes
 =======
 OS: 'Windows 11  (10.0.26100) 64bit Professional' Language: 'tr' Physical Memory: 14029 MB
 [Licensing::IpcConnector] Successfully connected to: "LicenseClient-YTA" at "2025-12-13T12:00:10.3983082Z"
@@ -29,11 +36,21 @@ AssetImportWorker0
 -projectPath
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 D:/YTA/Desktop/Startgate GameJam 2025/Startgate GameJam
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
 51817
+=======
+D:/YTA/Desktop/Startgate GameJam 2025/Feed the robot
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+57716
+-licensingIpc
+LicenseClient-YTA
+>>>>>>> Stashed changes
 =======
 D:/YTA/Desktop/Startgate GameJam 2025/Feed the robot
 -logFile
@@ -62,8 +79,13 @@ LicenseClient-YTA
 AssetImport
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 Successfully changed project path to: D:/YTA/Desktop/Startgate GameJam 2025/Startgate GameJam
 D:/YTA/Desktop/Startgate GameJam 2025/Startgate GameJam
+=======
+Successfully changed project path to: D:/YTA/Desktop/Startgate GameJam 2025/Feed the robot
+D:/YTA/Desktop/Startgate GameJam 2025/Feed the robot
+>>>>>>> Stashed changes
 =======
 Successfully changed project path to: D:/YTA/Desktop/Startgate GameJam 2025/Feed the robot
 D:/YTA/Desktop/Startgate GameJam 2025/Feed the robot
@@ -109,12 +131,21 @@ D:/YTA/Desktop/Startgate GameJam 2025/Feed the robot
     "memorysetup-temp-allocator-size-cloud-worker=32768"
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 Player connection [14688]  Target information:
 
 Player connection [14688]  * "[IP] 192.168.1.67 [Port] 0 [Flags] 2 [Guid] 1315401414 [EditorId] 1315401414 [Version] 1048832 [Id] WindowsEditor(7,Yigit-PC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
 Player connection [14688] Host joined multi-casting on [225.0.0.222:54997]...
 Player connection [14688] Host joined alternative multi-casting on [225.0.0.222:34997]...
+=======
+Player connection [6316]  Target information:
+
+Player connection [6316]  * "[IP] 192.168.1.67 [Port] 0 [Flags] 2 [Guid] 1176199402 [EditorId] 1176199402 [Version] 1048832 [Id] WindowsEditor(7,Yigit-PC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [6316] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [6316] Host joined alternative multi-casting on [225.0.0.222:34997]...
+>>>>>>> Stashed changes
 =======
 Player connection [6316]  Target information:
 
@@ -144,11 +175,19 @@ Library Redirect Path: Library/
 [Physics::Module] Threading Mode: Multi-Threaded
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 Refreshing native plugins compatible for Editor in 294.39 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 6000.3.0f1 (d1870ce95baf)
 [Subsystems] Discovering subsystems at path D:/C_Calisma/6000.3.0f1/Editor/Data/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path D:/YTA/Desktop/Startgate GameJam 2025/Startgate GameJam/Assets
+=======
+Refreshing native plugins compatible for Editor in 3.01 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 6000.3.0f1 (d1870ce95baf)
+[Subsystems] Discovering subsystems at path D:/C_Calisma/6000.3.0f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/YTA/Desktop/Startgate GameJam 2025/Feed the robot/Assets
+>>>>>>> Stashed changes
 =======
 Refreshing native plugins compatible for Editor in 3.01 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
@@ -176,6 +215,7 @@ Mono path[1] = 'D:/C_Calisma/6000.3.0f1/Editor/Data/MonoBleedingEdge/lib/mono/un
 Mono config path = 'D:/C_Calisma/6000.3.0f1/Editor/Data/MonoBleedingEdge/etc'
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56472
 Begin MonoManager ReloadAssembly
 [Licensing::Client] Handshaking with LicensingClient:
@@ -198,6 +238,12 @@ Begin MonoManager ReloadAssembly
 [Licensing::Client] Handshaking with LicensingClient:
   Version:                 1.17.4+4293ba1
 >>>>>>> Stashed changes
+=======
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56300
+Begin MonoManager ReloadAssembly
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.17.4+4293ba1
+>>>>>>> Stashed changes
   Session Id:              6c8076f4b5a742d0b5f5f44f3505a146
   Correlation Id:          59885fa7c0bf53a5f5e69adc9f88a58f
   External correlation Id: 2034086722092664524
@@ -206,6 +252,9 @@ Begin MonoManager ReloadAssembly
 [Licensing::IpcConnector] Successfully connected to: "LicenseClient-YTA-notifications" at "2025-12-13T12:00:11.2250436Z"
 [Licensing::Module] Licensing Background thread has ended after 0.83s
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -250,8 +299,13 @@ Register platform support module: D:/C_Calisma/6000.3.0f1/Editor/Data/PlaybackEn
 Register platform support module: D:/C_Calisma/6000.3.0f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 Registered in 0.019403 seconds.
 - Loaded All Assemblies, in  0.853 seconds
+=======
+Registered in 0.024066 seconds.
+- Loaded All Assemblies, in  0.402 seconds
+>>>>>>> Stashed changes
 =======
 Registered in 0.024066 seconds.
 - Loaded All Assemblies, in  0.402 seconds
@@ -266,7 +320,11 @@ Native extension for iOS target not found
 Native extension for Android target not found
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 Android Extension - Scanning For ADB Devices 354 ms
+=======
+Android Extension - Scanning For ADB Devices 217 ms
+>>>>>>> Stashed changes
 =======
 Android Extension - Scanning For ADB Devices 217 ms
 >>>>>>> Stashed changes
@@ -277,6 +335,7 @@ Native extension for UWP target not found
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 - Finished resetting the current domain, in  1.105 seconds
@@ -292,11 +351,17 @@ Domain Reload Profiling: 988ms
 Domain Reload Profiling: 988ms
 	BeginReloadAssembly (140ms)
 >>>>>>> Stashed changes
+=======
+- Finished resetting the current domain, in  0.586 seconds
+Domain Reload Profiling: 988ms
+	BeginReloadAssembly (140ms)
+>>>>>>> Stashed changes
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 	RebuildCommonClasses (58ms)
@@ -355,12 +420,33 @@ Domain Reload Profiling: 988ms
 		SetupLoadedEditorAssemblies (559ms)
 			LogAssemblyErrors (0ms)
 >>>>>>> Stashed changes
+=======
+	RebuildCommonClasses (31ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (62ms)
+	LoadAllAssembliesAndSetupDomain (159ms)
+		LoadAssemblies (141ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (154ms)
+			TypeCache.Refresh (153ms)
+				TypeCache.ScanAssembly (142ms)
+			BuildScriptInfoCaches (0ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (586ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (559ms)
+			LogAssemblyErrors (0ms)
+>>>>>>> Stashed changes
 			InitializePlatformSupportModulesInManaged (325ms)
 			SetLoadedEditorAssemblies (4ms)
 			BeforeProcessingInitializeOnLoad (69ms)
 			ProcessInitializeOnLoadAttributes (119ms)
 			ProcessInitializeOnLoadMethodAttributes (42ms)
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -385,8 +471,13 @@ Begin MonoManager ReloadAssembly
   Expiration: Unlimited
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 - Loaded All Assemblies, in  1.451 seconds
 Refreshing native plugins compatible for Editor in 2.61 ms, found 4 plugins.
+=======
+- Loaded All Assemblies, in  0.708 seconds
+Refreshing native plugins compatible for Editor in 1.04 ms, found 4 plugins.
+>>>>>>> Stashed changes
 =======
 - Loaded All Assemblies, in  0.708 seconds
 Refreshing native plugins compatible for Editor in 1.04 ms, found 4 plugins.
@@ -407,9 +498,15 @@ Package Manager log level set to [2]
 Mono: successfully reloaded assembly
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 - Finished resetting the current domain, in  1.400 seconds
 Domain Reload Profiling: 2848ms
 	BeginReloadAssembly (372ms)
+=======
+- Finished resetting the current domain, in  0.789 seconds
+Domain Reload Profiling: 1495ms
+	BeginReloadAssembly (176ms)
+>>>>>>> Stashed changes
 =======
 - Finished resetting the current domain, in  0.789 seconds
 Domain Reload Profiling: 1495ms
@@ -424,6 +521,7 @@ Domain Reload Profiling: 1495ms
 		DisableScriptedObjects (13ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 		CreateAndSetChildDomain (48ms)
@@ -557,11 +655,60 @@ Number of updated asset objects reloaded before import = 0Number of asset object
 ========================================================================
 Received Import Request.
 >>>>>>> Stashed changes
+=======
+		CreateAndSetChildDomain (27ms)
+	RebuildCommonClasses (30ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (29ms)
+	LoadAllAssembliesAndSetupDomain (461ms)
+		LoadAssemblies (347ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (221ms)
+			TypeCache.Refresh (161ms)
+				TypeCache.ScanAssembly (146ms)
+			BuildScriptInfoCaches (47ms)
+			ResolveRequiredComponents (9ms)
+	FinalizeReload (789ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (665ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (19ms)
+			SetLoadedEditorAssemblies (5ms)
+			BeforeProcessingInitializeOnLoad (125ms)
+			ProcessInitializeOnLoadAttributes (405ms)
+			ProcessInitializeOnLoadMethodAttributes (110ms)
+			AfterProcessingInitializeOnLoad (2ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (5ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
+Refreshing native plugins compatible for Editor in 2.08 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 16 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6928 unused Assets / (4.1 MB). Loaded Objects now: 7781.
+Memory consumption went from 164.4 MB to 160.3 MB.
+Total: 13.224700 ms (FindLiveObjects: 0.678300 ms CreateObjectMapping: 0.656800 ms MarkObjects: 9.166900 ms  DeleteObjects: 2.720600 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 944797.695623 seconds.
+  path: Assets/Scenes/SampleScene.unity
+  artifactKey: Guid(8c9cfa26abfee488c85f1582747f6a02) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/SampleScene.unity using Guid(8c9cfa26abfee488c85f1582747f6a02) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '67b0ebaa83e7af7fab002312f2c3e1f1') in 0.0984401 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+>>>>>>> Stashed changes
   Time since last request: 1.694371 seconds.
   path: Assets/Scenes/SampleScene.unity
   artifactKey: Guid(8c9cfa26abfee488c85f1582747f6a02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Scenes/SampleScene.unity using Guid(8c9cfa26abfee488c85f1582747f6a02) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '81c802b29cf8790e52511fb72ee47b44') in 0.0005534 seconds
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -569,6 +716,7 @@ Number of updated asset objects reloaded before import = 0Number of asset object
 
 ========================================================================
 Received Import Request.
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
   Time since last request: 0.000034 seconds.
@@ -585,6 +733,8 @@ Received Import Request.
 Start importing Assets/Scenes/SampleScene.unity using Guid(8c9cfa26abfee488c85f1582747f6a02) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'd9bb4d9c68e37a02547b8cd7ae09063a') in 0.0289337 seconds
 Number of updated asset objects reloaded before import = 6Number of asset objects unloaded after import = 1
 =======
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
   Time since last request: 4.413103 seconds.
@@ -674,6 +824,9 @@ Received Import Request.
 Start importing Packages/com.unity.2d.sprite/Editor/ObjectMenuCreation/DefaultAssets/Textures/HexagonPointTop.png using Guid(eed45a33cd08446c8b88325cf82fc52f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8cb1ce6b2d49c766a8964bc46d6ad35c') in 0.0266788 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -683,12 +836,15 @@ Received Import Request.
   Time since last request: 0.000017 seconds.
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   path: Assets/Settings/Scenes/URP2DSceneTemplate.unity
   artifactKey: Guid(2cda990e2423bbf4892e6590ba056729) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
 Start importing Assets/Settings/Scenes/URP2DSceneTemplate.unity using Guid(2cda990e2423bbf4892e6590ba056729) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ddb8809ffa59cf72b5975a44773635a5') in 0.0270679 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 =======
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
   path: Packages/com.unity.2d.sprite/Editor/ObjectMenuCreation/DefaultAssets/Textures/HexagonFlatTop.png
@@ -891,6 +1047,9 @@ Total: 17.131200 ms (FindLiveObjects: 0.865600 ms CreateObjectMapping: 0.990800 
 
 Prepare: number of updated asset objects reloaded= 0
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes

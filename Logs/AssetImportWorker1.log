@@ -2,10 +2,17 @@
 Built from '6000.3/staging' branch; Version is '6000.3.0f1 (d1870ce95baf) revision 13731596'; Using compiler version '194234433'; Build Type 'Release'
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 OS: 'Windows 11  (10.0.26100) 64bit Professional' Language: 'tr' Physical Memory: 14029 MB
 [Licensing::IpcConnector] Successfully connected to: "LicenseClient-YTA" at "2025-12-12T14:57:25.6321745Z"
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
 Date: 2025-12-12T14:57:25Z
+=======
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-YTA" at "2025-12-13T12:00:10.4085279Z"
+OS: 'Windows 11  (10.0.26100) 64bit Professional' Language: 'tr' Physical Memory: 14029 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
+Date: 2025-12-13T12:00:10Z
+>>>>>>> Stashed changes
 =======
 [Licensing::IpcConnector] Successfully connected to: "LicenseClient-YTA" at "2025-12-13T12:00:10.4085279Z"
 OS: 'Windows 11  (10.0.26100) 64bit Professional' Language: 'tr' Physical Memory: 14029 MB
@@ -29,11 +36,21 @@ AssetImportWorker1
 -projectPath
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 D:/YTA/Desktop/Startgate GameJam 2025/Startgate GameJam
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
 51817
+=======
+D:/YTA/Desktop/Startgate GameJam 2025/Feed the robot
+-logFile
+Logs/AssetImportWorker1.log
+-srvPort
+57716
+-licensingIpc
+LicenseClient-YTA
+>>>>>>> Stashed changes
 =======
 D:/YTA/Desktop/Startgate GameJam 2025/Feed the robot
 -logFile
@@ -62,8 +79,13 @@ LicenseClient-YTA
 AssetImport
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 Successfully changed project path to: D:/YTA/Desktop/Startgate GameJam 2025/Startgate GameJam
 D:/YTA/Desktop/Startgate GameJam 2025/Startgate GameJam
+=======
+Successfully changed project path to: D:/YTA/Desktop/Startgate GameJam 2025/Feed the robot
+D:/YTA/Desktop/Startgate GameJam 2025/Feed the robot
+>>>>>>> Stashed changes
 =======
 Successfully changed project path to: D:/YTA/Desktop/Startgate GameJam 2025/Feed the robot
 D:/YTA/Desktop/Startgate GameJam 2025/Feed the robot
@@ -109,12 +131,21 @@ D:/YTA/Desktop/Startgate GameJam 2025/Feed the robot
     "memorysetup-temp-allocator-size-cloud-worker=32768"
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 Player connection [21224]  Target information:
 
 Player connection [21224]  * "[IP] 192.168.1.67 [Port] 0 [Flags] 2 [Guid] 8432256 [EditorId] 8432256 [Version] 1048832 [Id] WindowsEditor(7,Yigit-PC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
 Player connection [21224] Host joined multi-casting on [225.0.0.222:54997]...
 Player connection [21224] Host joined alternative multi-casting on [225.0.0.222:34997]...
+=======
+Player connection [29148]  Target information:
+
+Player connection [29148]  * "[IP] 192.168.1.67 [Port] 0 [Flags] 2 [Guid] 4159676102 [EditorId] 4159676102 [Version] 1048832 [Id] WindowsEditor(7,Yigit-PC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [29148] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [29148] Host joined alternative multi-casting on [225.0.0.222:34997]...
+>>>>>>> Stashed changes
 =======
 Player connection [29148]  Target information:
 
@@ -144,11 +175,19 @@ Library Redirect Path: Library/
 [Physics::Module] Threading Mode: Multi-Threaded
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 Refreshing native plugins compatible for Editor in 304.93 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 6000.3.0f1 (d1870ce95baf)
 [Subsystems] Discovering subsystems at path D:/C_Calisma/6000.3.0f1/Editor/Data/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path D:/YTA/Desktop/Startgate GameJam 2025/Startgate GameJam/Assets
+=======
+Refreshing native plugins compatible for Editor in 3.10 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 6000.3.0f1 (d1870ce95baf)
+[Subsystems] Discovering subsystems at path D:/C_Calisma/6000.3.0f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/YTA/Desktop/Startgate GameJam 2025/Feed the robot/Assets
+>>>>>>> Stashed changes
 =======
 Refreshing native plugins compatible for Editor in 3.10 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
@@ -176,6 +215,7 @@ Mono path[1] = 'D:/C_Calisma/6000.3.0f1/Editor/Data/MonoBleedingEdge/lib/mono/un
 Mono config path = 'D:/C_Calisma/6000.3.0f1/Editor/Data/MonoBleedingEdge/etc'
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56640
 Begin MonoManager ReloadAssembly
 [Licensing::Client] Handshaking with LicensingClient:
@@ -198,6 +238,12 @@ Begin MonoManager ReloadAssembly
 [Licensing::Client] Handshaking with LicensingClient:
   Version:                 1.17.4+4293ba1
 >>>>>>> Stashed changes
+=======
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56032
+Begin MonoManager ReloadAssembly
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.17.4+4293ba1
+>>>>>>> Stashed changes
   Session Id:              f75348ccb7484464b137093ee9ae0d29
   Correlation Id:          59885fa7c0bf53a5f5e69adc9f88a58f
   External correlation Id: 6642722861062766197
@@ -206,6 +252,9 @@ Begin MonoManager ReloadAssembly
 [Licensing::IpcConnector] Successfully connected to: "LicenseClient-YTA-notifications" at "2025-12-13T12:00:11.2197406Z"
 [Licensing::Module] Licensing Background thread has ended after 0.81s
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -250,8 +299,13 @@ Register platform support module: D:/C_Calisma/6000.3.0f1/Editor/Data/PlaybackEn
 Register platform support module: D:/C_Calisma/6000.3.0f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 Registered in 0.012947 seconds.
 - Loaded All Assemblies, in  0.839 seconds
+=======
+Registered in 0.025306 seconds.
+- Loaded All Assemblies, in  0.400 seconds
+>>>>>>> Stashed changes
 =======
 Registered in 0.025306 seconds.
 - Loaded All Assemblies, in  0.400 seconds
@@ -266,7 +320,11 @@ Native extension for iOS target not found
 Native extension for Android target not found
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 Android Extension - Scanning For ADB Devices 344 ms
+=======
+Android Extension - Scanning For ADB Devices 217 ms
+>>>>>>> Stashed changes
 =======
 Android Extension - Scanning For ADB Devices 217 ms
 >>>>>>> Stashed changes
@@ -277,6 +335,7 @@ Native extension for UWP target not found
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 - Finished resetting the current domain, in  1.107 seconds
@@ -292,11 +351,17 @@ Domain Reload Profiling: 987ms
 Domain Reload Profiling: 987ms
 	BeginReloadAssembly (139ms)
 >>>>>>> Stashed changes
+=======
+- Finished resetting the current domain, in  0.587 seconds
+Domain Reload Profiling: 987ms
+	BeginReloadAssembly (139ms)
+>>>>>>> Stashed changes
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 	RebuildCommonClasses (62ms)
@@ -355,12 +420,33 @@ Domain Reload Profiling: 987ms
 		SetupLoadedEditorAssemblies (560ms)
 			LogAssemblyErrors (0ms)
 >>>>>>> Stashed changes
+=======
+	RebuildCommonClasses (29ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (63ms)
+	LoadAllAssembliesAndSetupDomain (157ms)
+		LoadAssemblies (140ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (153ms)
+			TypeCache.Refresh (152ms)
+				TypeCache.ScanAssembly (141ms)
+			BuildScriptInfoCaches (0ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (588ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (560ms)
+			LogAssemblyErrors (0ms)
+>>>>>>> Stashed changes
 			InitializePlatformSupportModulesInManaged (326ms)
 			SetLoadedEditorAssemblies (4ms)
 			BeforeProcessingInitializeOnLoad (70ms)
 			ProcessInitializeOnLoadAttributes (117ms)
 			ProcessInitializeOnLoadMethodAttributes (43ms)
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -385,8 +471,13 @@ Begin MonoManager ReloadAssembly
   Expiration: Unlimited
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 - Loaded All Assemblies, in  1.463 seconds
 Refreshing native plugins compatible for Editor in 3.56 ms, found 4 plugins.
+=======
+- Loaded All Assemblies, in  0.709 seconds
+Refreshing native plugins compatible for Editor in 1.33 ms, found 4 plugins.
+>>>>>>> Stashed changes
 =======
 - Loaded All Assemblies, in  0.709 seconds
 Refreshing native plugins compatible for Editor in 1.33 ms, found 4 plugins.
@@ -405,6 +496,7 @@ Package Manager log level set to [2]
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 - Finished resetting the current domain, in  1.387 seconds
@@ -497,6 +589,32 @@ Domain Reload Profiling: 1483ms
 		RebuildScriptCaches (0ms)
 		SetupLoadedEditorAssemblies (654ms)
 			LogAssemblyErrors (0ms)
+=======
+- Finished resetting the current domain, in  0.774 seconds
+Domain Reload Profiling: 1483ms
+	BeginReloadAssembly (180ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (26ms)
+	RebuildCommonClasses (31ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (30ms)
+	LoadAllAssembliesAndSetupDomain (458ms)
+		LoadAssemblies (349ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (217ms)
+			TypeCache.Refresh (158ms)
+				TypeCache.ScanAssembly (144ms)
+			BuildScriptInfoCaches (47ms)
+			ResolveRequiredComponents (9ms)
+	FinalizeReload (775ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (654ms)
+			LogAssemblyErrors (0ms)
+>>>>>>> Stashed changes
 =======
 - Finished resetting the current domain, in  0.774 seconds
 Domain Reload Profiling: 1483ms
@@ -816,6 +934,9 @@ Total: 12.996000 ms (FindLiveObjects: 0.788000 ms CreateObjectMapping: 0.587300 
 
 Prepare: number of updated asset objects reloaded= 0
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
