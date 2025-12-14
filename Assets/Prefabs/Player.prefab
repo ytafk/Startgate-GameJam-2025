@@ -19,6 +19,7 @@ GameObject:
   - component: {fileID: 8685665540799348230}
   - component: {fileID: 6059439680122513275}
   - component: {fileID: 5967826669538327790}
+  - component: {fileID: 7257378732530970267}
   m_Layer: 3
   m_Name: Player
   m_TagString: Player
@@ -255,8 +256,8 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.085017055, y: 0.037407517}
-  m_Radius: 0.38437685
+  m_Offset: {x: 0.06647962, y: -0.016443133}
+  m_Radius: 0.2663538
 --- !u!95 &8685665540799348230
 Animator:
   serializedVersion: 7
@@ -305,6 +306,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0be84d6e1c93f88499a6e2da2b65499d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerControlLock
+--- !u!114 &7257378732530970267
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 140300072605491003}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 552a70885fbb3134489e4f027f7877f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerBoost
+  speedMultiplier: 2
+  dashCooldownMultiplier: 1
+  duration: 10
 --- !u!1 &2283561921740560356
 GameObject:
   m_ObjectHideFlags: 0

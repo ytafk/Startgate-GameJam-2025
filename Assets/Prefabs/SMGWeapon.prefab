@@ -58,7 +58,7 @@ MonoBehaviour:
   firePoint: {fileID: 0}
   bulletPrefab: {fileID: 5592712660193589804, guid: 7649abd781141904fbd477d94a7ef8a2, type: 3}
   cam: {fileID: 0}
-  bulletSpeed: 12
+  bulletSpeed: 14
   logShootBlock: 0
   ammoInMag: 0
   reserveAmmo: 0

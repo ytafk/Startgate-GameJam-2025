@@ -36,6 +36,13 @@ public class ProwlerAI : MonoBehaviour
     public float separationStrength = 2.5f;
     public LayerMask enemyMask;
 
+    [Header("Obstacle Avoidance")]
+    public LayerMask obstacleMask;
+    public float avoidDistance = 1.2f;
+    public float avoidRadius = 0.25f;
+    public float avoidStrength = 3.0f;
+    public float avoidSideBias = 0.35f; // sürekli sağ/sol seçsin diye küçük bias
+
     // Referanslar
     private Rigidbody2D rb;
     private EnemyRobot overloadCore;
@@ -103,6 +110,39 @@ public class ProwlerAI : MonoBehaviour
         {
             StartAttack();
         }
+
+       
+        Vector2 avoid = ComputeObstacleAvoidance(dirToPlayer);   // ✅ yeni
+
+        
+
+        if (dist <= stopDistance)
+            desiredVel = (sep * separationStrength) + (avoid * avoidStrength);
+        else
+            desiredVel = (dirToPlayer * spd) + (sep * separationStrength) + (avoid * avoidStrength);
+
+        rb.linearVelocity = Vector2.Lerp(rb.linearVelocity, desiredVel, 0.35f);
+
+    }
+    Vector2 ComputeObstacleAvoidance(Vector2 forwardDir)
+    {
+        if (obstacleMask.value == 0) return Vector2.zero;
+        if (forwardDir.sqrMagnitude < 0.0001f) return Vector2.zero;
+
+        Vector2 origin = transform.position;
+
+        // Öne doğru "kalın" ray: circlecast
+        RaycastHit2D hit = Physics2D.CircleCast(origin, avoidRadius, forwardDir, avoidDistance, obstacleMask);
+        if (!hit.collider) return Vector2.zero;
+
+        // Engel normali: engelden uzağa yön
+        Vector2 away = hit.normal;
+
+        // Hafif yan bias: sürekli aynı tarafa kırılmasın diye
+        Vector2 side = new Vector2(-forwardDir.y, forwardDir.x); // sol
+        away += side * avoidSideBias;
+
+        return away.normalized;
     }
 
     // --- HEDEF BULMA (Simple'dan) ---

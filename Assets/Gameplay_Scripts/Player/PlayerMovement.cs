@@ -27,6 +27,9 @@ public class PlayerMovement2D_NewInput : MonoBehaviour
     private bool isDashing;
     private bool canDash = true;
 
+    // ✅ Boost ref (opsiyonel)
+    PlayerBoost boost;
+
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -34,6 +37,9 @@ public class PlayerMovement2D_NewInput : MonoBehaviour
 
         // Eğer Inspector'dan atanmadıysa otomatik bulmayı dene
         if (!anim) anim = GetComponent<PlayerAnimDriver>();
+
+        // ✅ varsa yakala
+        boost = GetComponent<PlayerBoost>();
     }
 
     // Input System: Move (WASD)
@@ -61,15 +67,25 @@ public class PlayerMovement2D_NewInput : MonoBehaviour
         // Dash atarken normal hareket kodunu çalıştırma
         if (isDashing) return;
 
+        // ✅ boost component sonradan eklendiyse yakalayabilsin
+        if (!boost) boost = GetComponent<PlayerBoost>();
+
+        float speedMul = (boost != null) ? boost.CurrentSpeedMultiplier : 1f;
+
         // Normal hareket fiziği
         rb.linearDamping = normalDrag; // Unity 6 öncesi için rb.drag kullanın
-        rb.linearVelocity = moveInput.normalized * moveSpeed; // Unity 6 öncesi için rb.velocity kullanın
+        rb.linearVelocity = moveInput.normalized * (moveSpeed * speedMul); // Unity 6 öncesi için rb.velocity kullanın
     }
 
     private IEnumerator DashRoutine()
     {
         canDash = false;
         isDashing = true;
+
+        // ✅ boost component sonradan eklendiyse yakalayabilsin
+        if (!boost) boost = GetComponent<PlayerBoost>();
+
+        float dashCdMul = (boost != null) ? boost.CurrentDashCooldownMultiplier : 1f;
 
         // ✅ Animasyonu Başlat
         if (anim) anim.SetDashing(true);
@@ -89,8 +105,8 @@ public class PlayerMovement2D_NewInput : MonoBehaviour
         // ✅ Animasyonu Bitir
         if (anim) anim.SetDashing(false);
 
-        // Tekrar dash atabilmek için cooldown süresini bekle
-        yield return new WaitForSeconds(dashCooldown);
+        // ✅ Tekrar dash atabilmek için cooldown (boost ile kısalır)
+        yield return new WaitForSeconds(dashCooldown * dashCdMul);
         canDash = true;
     }
 }

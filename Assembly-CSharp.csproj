@@ -65,6 +65,7 @@
     <Compile Include="Assets\Gameplay_Scripts\Weapons\SMG.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventHandler.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\EnvMapAnimator.cs" />
+    <Compile Include="Assets\Gameplay_Scripts\Player\PlayerBoost.cs" />
     <Compile Include="Assets\Gameplay_Scripts\Enemies\ArenaEnemySpawner.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_A.cs" />
     <Compile Include="Assets\Gameplay_Scripts\EnemyLootDropper.cs" />
@@ -83,6 +84,7 @@
     <Compile Include="Assets\UI_Scripts\QuitButtonsc.cs" />
     <Compile Include="Assets\Gameplay_Scripts\Weapons\ShotGun.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexJitter.cs" />
+    <Compile Include="Assets\Gameplay_Scripts\Enemies\EnemyHitFlash.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_UiFrameRateCounter.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
     <Compile Include="Assets\UI_Scripts\UIManager.cs" />
@@ -131,6 +133,7 @@
     <Compile Include="Assets\Gameplay_Scripts\Enemies\Enemy.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshProFloatingText.cs" />
     <Compile Include="Assets\UI_Scripts\WeaponIconData.cs" />
+    <Compile Include="Assets\Gameplay_Scripts\Weapons\BoostPickup.cs" />
     <Compile Include="Assets\UI_Scripts\Volumeslidersc.cs" />
     <Compile Include="Assets\Gameplay_Scripts\Weapons\WeaponBase.cs" />
   </ItemGroup>

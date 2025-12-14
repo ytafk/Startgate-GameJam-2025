@@ -29,13 +29,9 @@ public abstract class WeaponBase : MonoBehaviour
     [Header("Debug")]
     public bool logShootBlock;
 
-    // =========================================================
-    // DÜZELTİLEN KISIM BURASI (protected -> public yapıldı)
-    // =========================================================
     [HideInInspector] public int ammoInMag;
     [HideInInspector] public int reserveAmmo;
     protected bool isReloading;
-    // =========================================================
 
     float nextShotTime;
     float reloadEndTime;
@@ -44,7 +40,7 @@ public abstract class WeaponBase : MonoBehaviour
     {
         if (!cam) cam = Camera.main;
 
-        // Başlangıç mermilerini ayarla
+        // Varsayılan başlangıç (Kutudan veri gelmezse bu geçerli olur)
         ammoInMag = magazineSize;
         reserveAmmo = startReserveAmmo;
     }
@@ -141,8 +137,12 @@ public abstract class WeaponBase : MonoBehaviour
 
         var rb = Instantiate(bulletPrefab, firePoint.position, Quaternion.identity);
 
-        // Unity 6+ için linearVelocity, eski sürümler için velocity
+        // Unity 6+ linearVelocity, eskiler için velocity
+#if UNITY_6000_0_OR_NEWER
         rb.linearVelocity = dir * bulletSpeed;
+#else
+        rb.velocity = dir * bulletSpeed;
+#endif
 
         var b = rb.GetComponent<Bullet>();
         if (b != null)
@@ -166,4 +166,12 @@ public abstract class WeaponBase : MonoBehaviour
 
     public abstract void OnPress();
     public abstract void OnRelease();
+
+    // --- MERMİ YÜKLEME FONKSİYONU ---
+    public void LoadAmmo(int mag, int reserve)
+    {
+        // Eğer kutudan geçerli veri geldiyse (-1 değilse) uygula
+        if (mag != -1) ammoInMag = mag;
+        if (reserve != -1) reserveAmmo = reserve;
+    }
 }

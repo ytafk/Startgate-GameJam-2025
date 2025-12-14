@@ -3,11 +3,35 @@
   "WorkspaceRootPath": "D:\\YTA\\Desktop\\Startgate GameJam 2025\\Feed the robot\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7BD1BE63-49EB-6FC4-E633-1FFB6C95BDDF}|Assembly-CSharp.csproj|d:\\yta\\desktop\\startgate gamejam 2025\\feed the robot\\assets\\gameplay_scripts\\enemies\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7BD1BE63-49EB-6FC4-E633-1FFB6C95BDDF}|Assembly-CSharp.csproj|D:\\YTA\\Desktop\\Startgate GameJam 2025\\Feed the robot\\assets\\gameplay_scripts\\enemies\\prowlerai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BD1BE63-49EB-6FC4-E633-1FFB6C95BDDF}|Assembly-CSharp.csproj|solutionrelative:assets\\gameplay_scripts\\enemies\\prowlerai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BD1BE63-49EB-6FC4-E633-1FFB6C95BDDF}|Assembly-CSharp.csproj|D:\\YTA\\Desktop\\Startgate GameJam 2025\\Feed the robot\\assets\\gameplay_scripts\\enemies\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7BD1BE63-49EB-6FC4-E633-1FFB6C95BDDF}|Assembly-CSharp.csproj|solutionrelative:assets\\gameplay_scripts\\enemies\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7BD1BE63-49EB-6FC4-E633-1FFB6C95BDDF}|Assembly-CSharp.csproj|d:\\yta\\desktop\\startgate gamejam 2025\\feed the robot\\assets\\gameplay_scripts\\weapons\\shotgun.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7BD1BE63-49EB-6FC4-E633-1FFB6C95BDDF}|Assembly-CSharp.csproj|D:\\YTA\\Desktop\\Startgate GameJam 2025\\Feed the robot\\assets\\gameplay_scripts\\enemylootdropper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BD1BE63-49EB-6FC4-E633-1FFB6C95BDDF}|Assembly-CSharp.csproj|solutionrelative:assets\\gameplay_scripts\\enemylootdropper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BD1BE63-49EB-6FC4-E633-1FFB6C95BDDF}|Assembly-CSharp.csproj|d:\\yta\\desktop\\startgate gamejam 2025\\feed the robot\\assets\\gameplay_scripts\\player\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BD1BE63-49EB-6FC4-E633-1FFB6C95BDDF}|Assembly-CSharp.csproj|solutionrelative:assets\\gameplay_scripts\\player\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BD1BE63-49EB-6FC4-E633-1FFB6C95BDDF}|Assembly-CSharp.csproj|d:\\yta\\desktop\\startgate gamejam 2025\\feed the robot\\assets\\gameplay_scripts\\player\\playerboost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BD1BE63-49EB-6FC4-E633-1FFB6C95BDDF}|Assembly-CSharp.csproj|solutionrelative:assets\\gameplay_scripts\\player\\playerboost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BD1BE63-49EB-6FC4-E633-1FFB6C95BDDF}|Assembly-CSharp.csproj|d:\\yta\\desktop\\startgate gamejam 2025\\feed the robot\\assets\\gameplay_scripts\\weapons\\boostpickup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BD1BE63-49EB-6FC4-E633-1FFB6C95BDDF}|Assembly-CSharp.csproj|solutionrelative:assets\\gameplay_scripts\\weapons\\boostpickup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BD1BE63-49EB-6FC4-E633-1FFB6C95BDDF}|Assembly-CSharp.csproj|D:\\YTA\\Desktop\\Startgate GameJam 2025\\Feed the robot\\assets\\gameplay_scripts\\enemies\\enemyhitflash.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BD1BE63-49EB-6FC4-E633-1FFB6C95BDDF}|Assembly-CSharp.csproj|solutionrelative:assets\\gameplay_scripts\\enemies\\enemyhitflash.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BD1BE63-49EB-6FC4-E633-1FFB6C95BDDF}|Assembly-CSharp.csproj|D:\\YTA\\Desktop\\Startgate GameJam 2025\\Feed the robot\\assets\\gameplay_scripts\\weapons\\shotgun.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7BD1BE63-49EB-6FC4-E633-1FFB6C95BDDF}|Assembly-CSharp.csproj|solutionrelative:assets\\gameplay_scripts\\weapons\\shotgun.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -31,10 +55,6 @@
       "RelativeMoniker": "D:0:0:{7BD1BE63-49EB-6FC4-E633-1FFB6C95BDDF}|Assembly-CSharp.csproj|solutionrelative:assets\\gameplay_scripts\\lootdroptable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7BD1BE63-49EB-6FC4-E633-1FFB6C95BDDF}|Assembly-CSharp.csproj|D:\\YTA\\Desktop\\Startgate GameJam 2025\\Feed the robot\\assets\\gameplay_scripts\\enemylootdropper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7BD1BE63-49EB-6FC4-E633-1FFB6C95BDDF}|Assembly-CSharp.csproj|solutionrelative:assets\\gameplay_scripts\\enemylootdropper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{7BD1BE63-49EB-6FC4-E633-1FFB6C95BDDF}|Assembly-CSharp.csproj|D:\\YTA\\Desktop\\Startgate GameJam 2025\\Feed the robot\\assets\\gameplay_scripts\\weapons\\ammopickup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7BD1BE63-49EB-6FC4-E633-1FFB6C95BDDF}|Assembly-CSharp.csproj|solutionrelative:assets\\gameplay_scripts\\weapons\\ammopickup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -49,10 +69,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{7BD1BE63-49EB-6FC4-E633-1FFB6C95BDDF}|Assembly-CSharp.csproj|D:\\YTA\\Desktop\\Startgate GameJam 2025\\Feed the robot\\assets\\gameplay_scripts\\weapons\\weaponbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7BD1BE63-49EB-6FC4-E633-1FFB6C95BDDF}|Assembly-CSharp.csproj|solutionrelative:assets\\gameplay_scripts\\weapons\\weaponbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7BD1BE63-49EB-6FC4-E633-1FFB6C95BDDF}|Assembly-CSharp.csproj|D:\\YTA\\Desktop\\Startgate GameJam 2025\\Feed the robot\\assets\\gameplay_scripts\\enemies\\prowlerai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7BD1BE63-49EB-6FC4-E633-1FFB6C95BDDF}|Assembly-CSharp.csproj|solutionrelative:assets\\gameplay_scripts\\enemies\\prowlerai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7BD1BE63-49EB-6FC4-E633-1FFB6C95BDDF}|Assembly-CSharp.csproj|D:\\YTA\\Desktop\\Startgate GameJam 2025\\Feed the robot\\assets\\gameplay_scripts\\player\\playercontrollock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -74,24 +90,63 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 11,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
+              "Title": "PlayerMovement.cs",
+              "DocumentMoniker": "D:\\YTA\\Desktop\\Startgate GameJam 2025\\Feed the robot\\Assets\\Gameplay_Scripts\\Player\\PlayerMovement.cs",
+              "RelativeDocumentMoniker": "Assets\\Gameplay_Scripts\\Player\\PlayerMovement.cs",
+              "ToolTip": "D:\\YTA\\Desktop\\Startgate GameJam 2025\\Feed the robot\\Assets\\Gameplay_Scripts\\Player\\PlayerMovement.cs",
+              "RelativeToolTip": "Assets\\Gameplay_Scripts\\Player\\PlayerMovement.cs",
+              "ViewState": "AgIAAE0AAAAAAAAAAAAowHAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T12:36:13.821Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PlayerBoost.cs",
+              "DocumentMoniker": "D:\\YTA\\Desktop\\Startgate GameJam 2025\\Feed the robot\\Assets\\Gameplay_Scripts\\Player\\PlayerBoost.cs",
+              "RelativeDocumentMoniker": "Assets\\Gameplay_Scripts\\Player\\PlayerBoost.cs",
+              "ToolTip": "D:\\YTA\\Desktop\\Startgate GameJam 2025\\Feed the robot\\Assets\\Gameplay_Scripts\\Player\\PlayerBoost.cs",
+              "RelativeToolTip": "Assets\\Gameplay_Scripts\\Player\\PlayerBoost.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAowCkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T12:35:54.13Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BoostPickup.cs",
+              "DocumentMoniker": "D:\\YTA\\Desktop\\Startgate GameJam 2025\\Feed the robot\\Assets\\Gameplay_Scripts\\Weapons\\BoostPickup.cs",
+              "RelativeDocumentMoniker": "Assets\\Gameplay_Scripts\\Weapons\\BoostPickup.cs",
+              "ToolTip": "D:\\YTA\\Desktop\\Startgate GameJam 2025\\Feed the robot\\Assets\\Gameplay_Scripts\\Weapons\\BoostPickup.cs",
+              "RelativeToolTip": "Assets\\Gameplay_Scripts\\Weapons\\BoostPickup.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T12:35:30.403Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Enemy.cs",
               "DocumentMoniker": "D:\\YTA\\Desktop\\Startgate GameJam 2025\\Feed the robot\\Assets\\Gameplay_Scripts\\Enemies\\Enemy.cs",
               "RelativeDocumentMoniker": "Assets\\Gameplay_Scripts\\Enemies\\Enemy.cs",
               "ToolTip": "D:\\YTA\\Desktop\\Startgate GameJam 2025\\Feed the robot\\Assets\\Gameplay_Scripts\\Enemies\\Enemy.cs",
               "RelativeToolTip": "Assets\\Gameplay_Scripts\\Enemies\\Enemy.cs",
-              "ViewState": "AgIAADAAAAAAAAAAAAAowDMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-13T09:50:01.87Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
               "Title": "ShotGun.cs",
               "DocumentMoniker": "D:\\YTA\\Desktop\\Startgate GameJam 2025\\Feed the robot\\Assets\\Gameplay_Scripts\\Weapons\\ShotGun.cs",
               "RelativeDocumentMoniker": "Assets\\Gameplay_Scripts\\Weapons\\ShotGun.cs",
@@ -99,12 +154,11 @@
               "RelativeToolTip": "Assets\\Gameplay_Scripts\\Weapons\\ShotGun.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-14T09:22:16.007Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-14T09:22:16.007Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 16,
               "Title": "WeaponBase.cs",
               "DocumentMoniker": "D:\\YTA\\Desktop\\Startgate GameJam 2025\\Feed the robot\\Assets\\Gameplay_Scripts\\Weapons\\WeaponBase.cs",
               "RelativeDocumentMoniker": "Assets\\Gameplay_Scripts\\Weapons\\WeaponBase.cs",
@@ -116,7 +170,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 15,
               "Title": "PlayerHealth.cs",
               "DocumentMoniker": "D:\\YTA\\Desktop\\Startgate GameJam 2025\\Feed the robot\\Assets\\Gameplay_Scripts\\Player\\PlayerHealth.cs",
               "RelativeDocumentMoniker": "Assets\\Gameplay_Scripts\\Player\\PlayerHealth.cs",
@@ -128,7 +182,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 14,
               "Title": "HealthPickup.cs",
               "DocumentMoniker": "D:\\YTA\\Desktop\\Startgate GameJam 2025\\Feed the robot\\Assets\\Gameplay_Scripts\\Weapons\\HealthPickup.cs",
               "RelativeDocumentMoniker": "Assets\\Gameplay_Scripts\\Weapons\\HealthPickup.cs",
@@ -140,7 +194,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 13,
               "Title": "AmmoPickup.cs",
               "DocumentMoniker": "D:\\YTA\\Desktop\\Startgate GameJam 2025\\Feed the robot\\Assets\\Gameplay_Scripts\\Weapons\\AmmoPickup.cs",
               "RelativeDocumentMoniker": "Assets\\Gameplay_Scripts\\Weapons\\AmmoPickup.cs",
@@ -152,19 +206,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 2,
               "Title": "EnemyLootDropper.cs",
               "DocumentMoniker": "D:\\YTA\\Desktop\\Startgate GameJam 2025\\Feed the robot\\Assets\\Gameplay_Scripts\\EnemyLootDropper.cs",
               "RelativeDocumentMoniker": "Assets\\Gameplay_Scripts\\EnemyLootDropper.cs",
               "ToolTip": "D:\\YTA\\Desktop\\Startgate GameJam 2025\\Feed the robot\\Assets\\Gameplay_Scripts\\EnemyLootDropper.cs",
               "RelativeToolTip": "Assets\\Gameplay_Scripts\\EnemyLootDropper.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAgwCkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-13T23:10:09.589Z"
+              "WhenOpened": "2025-12-13T23:10:09.589Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 12,
               "Title": "LootDropTable.cs",
               "DocumentMoniker": "D:\\YTA\\Desktop\\Startgate GameJam 2025\\Feed the robot\\Assets\\Gameplay_Scripts\\LootDropTable.cs",
               "RelativeDocumentMoniker": "Assets\\Gameplay_Scripts\\LootDropTable.cs",
@@ -176,7 +231,32 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
+              "Title": "ProwlerAI.cs",
+              "DocumentMoniker": "D:\\YTA\\Desktop\\Startgate GameJam 2025\\Feed the robot\\Assets\\Gameplay_Scripts\\Enemies\\ProwlerAI.cs",
+              "RelativeDocumentMoniker": "Assets\\Gameplay_Scripts\\Enemies\\ProwlerAI.cs",
+              "ToolTip": "D:\\YTA\\Desktop\\Startgate GameJam 2025\\Feed the robot\\Assets\\Gameplay_Scripts\\Enemies\\ProwlerAI.cs",
+              "RelativeToolTip": "Assets\\Gameplay_Scripts\\Enemies\\ProwlerAI.cs",
+              "ViewState": "AgIAAFgAAAAAAAAAAAAQwHQAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-13T09:29:09.337Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "EnemyHitFlash.cs",
+              "DocumentMoniker": "D:\\YTA\\Desktop\\Startgate GameJam 2025\\Feed the robot\\Assets\\Gameplay_Scripts\\Enemies\\EnemyHitFlash.cs",
+              "RelativeDocumentMoniker": "Assets\\Gameplay_Scripts\\Enemies\\EnemyHitFlash.cs",
+              "ToolTip": "D:\\YTA\\Desktop\\Startgate GameJam 2025\\Feed the robot\\Assets\\Gameplay_Scripts\\Enemies\\EnemyHitFlash.cs",
+              "RelativeToolTip": "Assets\\Gameplay_Scripts\\Enemies\\EnemyHitFlash.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAowC4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T12:31:51.409Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "ArenaEnemySpawner.cs",
               "DocumentMoniker": "D:\\YTA\\Desktop\\Startgate GameJam 2025\\Feed the robot\\Assets\\Gameplay_Scripts\\Enemies\\ArenaEnemySpawner.cs",
               "RelativeDocumentMoniker": "Assets\\Gameplay_Scripts\\Enemies\\ArenaEnemySpawner.cs",
@@ -188,7 +268,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 11,
               "Title": "PlayerAnimDriver.cs",
               "DocumentMoniker": "D:\\YTA\\Desktop\\Startgate GameJam 2025\\Feed the robot\\Assets\\Gameplay_Scripts\\Player\\PlayerAnimDriver.cs",
               "RelativeDocumentMoniker": "Assets\\Gameplay_Scripts\\Player\\PlayerAnimDriver.cs",
@@ -200,7 +280,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 10,
               "Title": "SniperRifle.cs",
               "DocumentMoniker": "D:\\YTA\\Desktop\\Startgate GameJam 2025\\Feed the robot\\Assets\\Gameplay_Scripts\\Weapons\\SniperRifle.cs",
               "RelativeDocumentMoniker": "Assets\\Gameplay_Scripts\\Weapons\\SniperRifle.cs",
@@ -212,7 +292,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 9,
               "Title": "CameraFallow.cs",
               "DocumentMoniker": "D:\\YTA\\Desktop\\Startgate GameJam 2025\\Feed the robot\\Assets\\Core_Scripts\\CameraFallow.cs",
               "RelativeDocumentMoniker": "Assets\\Core_Scripts\\CameraFallow.cs",
@@ -224,7 +304,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 19,
               "Title": "EnemyAnimDriver.cs",
               "DocumentMoniker": "D:\\YTA\\Desktop\\Startgate GameJam 2025\\Feed the robot\\Assets\\Gameplay_Scripts\\Enemies\\EnemyAnimDriver.cs",
               "RelativeDocumentMoniker": "Assets\\Gameplay_Scripts\\Enemies\\EnemyAnimDriver.cs",
@@ -236,7 +316,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 17,
               "Title": "PlayerControlLock.cs",
               "DocumentMoniker": "D:\\YTA\\Desktop\\Startgate GameJam 2025\\Feed the robot\\Assets\\Gameplay_Scripts\\Player\\PlayerControlLock.cs",
               "RelativeDocumentMoniker": "Assets\\Gameplay_Scripts\\Player\\PlayerControlLock.cs",
@@ -248,19 +328,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "ProwlerAI.cs",
-              "DocumentMoniker": "D:\\YTA\\Desktop\\Startgate GameJam 2025\\Feed the robot\\Assets\\Gameplay_Scripts\\Enemies\\ProwlerAI.cs",
-              "RelativeDocumentMoniker": "Assets\\Gameplay_Scripts\\Enemies\\ProwlerAI.cs",
-              "ToolTip": "D:\\YTA\\Desktop\\Startgate GameJam 2025\\Feed the robot\\Assets\\Gameplay_Scripts\\Enemies\\ProwlerAI.cs",
-              "RelativeToolTip": "Assets\\Gameplay_Scripts\\Enemies\\ProwlerAI.cs",
-              "ViewState": "AgIAAFUAAAAAAAAAAADwv28AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-13T09:29:09.337Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 18,
               "Title": "PlayerWeaponInventory.cs",
               "DocumentMoniker": "D:\\YTA\\Desktop\\Startgate GameJam 2025\\Feed the robot\\Assets\\Gameplay_Scripts\\Weapons\\PlayerWeaponInventory.cs",
               "RelativeDocumentMoniker": "Assets\\Gameplay_Scripts\\Weapons\\PlayerWeaponInventory.cs",

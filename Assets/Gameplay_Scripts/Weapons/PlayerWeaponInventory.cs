@@ -13,13 +13,13 @@ public class PlayerWeaponInventory : MonoBehaviour
     public WeaponBase current;
 
     [Header("UI (Old/Text)")]
-    public UIManager messageUI; // Eski text tabanlı UI
+    public UIManager messageUI;
 
     [Header("Anim")]
     public PlayerAnimDriver anim;
 
     [Header("Shoot Anim Repeat")]
-    [Tooltip("Basılı tutarken shoot anim trigger tekrar aralığı. Silah ateş hızını değiştirmez; sadece animasyon.")]
+    [Tooltip("Basılı tutarken shoot anim trigger tekrar aralığı.")]
     public float shootAnimInterval = 0.12f;
 
     private WeaponPickup nearbyPickup;
@@ -28,7 +28,6 @@ public class PlayerWeaponInventory : MonoBehaviour
 
     void Start()
     {
-        // Başlangıçta animasyon sürücüsünü al
         if (!anim) anim = GetComponent<PlayerAnimDriver>();
 
         Equip(null);
@@ -37,40 +36,32 @@ public class PlayerWeaponInventory : MonoBehaviour
 
     void Update()
     {
-        // ✅ Silahlar aktif olmasa bile reload/cooldown state güncellensin
         if (slot1 != null) slot1.Tick();
         if (slot2 != null) slot2.Tick();
 
-        // ===== FIRE INPUT + SHOOT ANIM (Script 2'den gelen gelişmiş mantık) =====
-        // Input System kontrolleri
+        // ===== FIRE INPUT + SHOOT ANIM =====
         bool held = Mouse.current != null && Mouse.current.leftButton.isPressed;
         bool pressedThisFrame = Mouse.current != null && Mouse.current.leftButton.wasPressedThisFrame;
         bool releasedThisFrame = Mouse.current != null && Mouse.current.leftButton.wasReleasedThisFrame;
 
         if (current != null)
         {
-            // 1. Tıklama Anı
+            // 1. Tıklama
             if (pressedThisFrame)
             {
-                // Silahın kendi ateşleme sistemi
                 current.OnPress();
-
-                // Animasyon: Tek tıkla ateşleme
                 if (anim) anim.TriggerShoot();
-
-                // Basılı tutma için zamanlayıcıyı ayarla
                 nextShootAnimTime = Time.time + shootAnimInterval;
             }
 
-            // 2. Basılı Tutma Anı (Sürekli Ateş Eden Silahlar İçin Animasyon Tekrarı)
+            // 2. Basılı Tutma
             if (held && wasHeld && Time.time >= nextShootAnimTime)
             {
-                // Animasyon: Tekrar tetikle
                 if (anim) anim.TriggerShoot();
                 nextShootAnimTime = Time.time + shootAnimInterval;
             }
 
-            // 3. Bırakma Anı
+            // 3. Bırakma
             if (releasedThisFrame)
             {
                 current.OnRelease();
@@ -81,7 +72,7 @@ public class PlayerWeaponInventory : MonoBehaviour
 
         // ===== DİĞER KONTROLLER =====
 
-        // Reload (R Tuşu)
+        // Reload
         if (current != null && Keyboard.current != null && Keyboard.current.rKey.wasPressedThisFrame)
         {
             current.StartReload();
@@ -89,7 +80,7 @@ public class PlayerWeaponInventory : MonoBehaviour
 
         if (Keyboard.current != null)
         {
-            // Slot Değiştirme (1 ve 2 Tuşları)
+            // Slot Değiştirme
             if (Keyboard.current.digit1Key.wasPressedThisFrame) Equip(slot1);
             if (Keyboard.current.digit2Key.wasPressedThisFrame) Equip(slot2);
 
@@ -107,44 +98,51 @@ public class PlayerWeaponInventory : MonoBehaviour
 
     void TakeOrSwap(WeaponPickup pickup)
     {
-        // Slot 1 boşsa oraya al
+        // --- SLOT 1 BOŞSA ---
         if (slot1 == null)
         {
             slot1 = SpawnWeapon(pickup.weaponPrefab);
+
+            // ✅ Mermileri kutudan silaha aktar
+            slot1.LoadAmmo(pickup.savedAmmoInMag, pickup.savedReserveAmmo);
+
             Equip(slot1);
             Destroy(pickup.gameObject);
             return;
         }
 
-        // Slot 2 boşsa oraya al
+        // --- SLOT 2 BOŞSA ---
         if (slot2 == null)
         {
             slot2 = SpawnWeapon(pickup.weaponPrefab);
+
+            // ✅ Mermileri kutudan silaha aktar
+            slot2.LoadAmmo(pickup.savedAmmoInMag, pickup.savedReserveAmmo);
+
             Equip(slot2);
             Destroy(pickup.gameObject);
             return;
         }
 
-        // İki slot da doluysa:
-        // Eğer elimizde silah yoksa (ama slotlar doluysa - nadir durum) 1'i seç
-        if (current == null)
-        {
-            Equip(slot1);
-        }
+        // --- İKİSİ DE DOLUYSA DEĞİŞTİR ---
 
-        // 1. Mevcut silahı yere at (Pickup oluştur)
+        if (current == null) Equip(slot1);
+
+        // 1. Mevcut silahı yere at (ve mermisini kaydet)
         DropCurrentAsPickup(pickup.transform.position);
 
-        // 2. Mevcut silahı inventory'den sil ve yok et
+        // 2. Mevcut silahı sil
         RemoveFromSlots(current);
         Destroy(current.gameObject);
         current = null;
 
-        // 3. Yeni silahı oluştur ve boşalan slota koy
+        // 3. Yeni silahı oluştur
         var newWpn = SpawnWeapon(pickup.weaponPrefab);
-        PutIntoFirstEmptySlot(newWpn);
 
-        // 4. Yeni silahı kuşan
+        // ✅ Mermileri kutudan yeni silaha aktar
+        newWpn.LoadAmmo(pickup.savedAmmoInMag, pickup.savedReserveAmmo);
+
+        PutIntoFirstEmptySlot(newWpn);
         Equip(newWpn);
 
         // Yerdeki kutuyu yok et
@@ -157,7 +155,6 @@ public class PlayerWeaponInventory : MonoBehaviour
         w.firePoint = firePoint;
         if (!w.cam) w.cam = Camera.main;
 
-        // ✅ Script 1'den gelen özellik: Elde silah sprite'ı görünmesin
         foreach (var sr in w.GetComponentsInChildren<SpriteRenderer>(true))
             sr.enabled = false;
 
@@ -166,11 +163,10 @@ public class PlayerWeaponInventory : MonoBehaviour
     }
 
     // ---------------------------------------------------------
-    // EQUIP (BİRLEŞTİRİLEN KRİTİK NOKTA)
+    // EQUIP
     // ---------------------------------------------------------
     void Equip(WeaponBase w)
     {
-        // Eski silahı kapat
         if (current != null)
         {
             current.OnRelease();
@@ -179,23 +175,20 @@ public class PlayerWeaponInventory : MonoBehaviour
 
         current = w;
 
-        // Yeni silahı aç
         if (current != null)
         {
             current.gameObject.SetActive(true);
             current.Tick();
         }
 
-        // >>>>> Script 1'den Eklenen Özellik: İkon Güncelleme <<<<<
+        // İkon Güncelleme
         if (WeaponUIManager.Instance != null)
         {
             WeaponUIManager.Instance.UpdateCurrentWeapon(current);
         }
-        // >>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
         RefreshUI();
 
-        // Equip olunca basılı tutma durumunu sıfırla (bug önleme)
         wasHeld = false;
         nextShootAnimTime = 0f;
     }
@@ -222,7 +215,15 @@ public class PlayerWeaponInventory : MonoBehaviour
         if (current == null) return;
         if (current.pickupPrefab == null) return;
 
-        Instantiate(current.pickupPrefab, position, Quaternion.identity);
+        // Yere kutuyu oluştur
+        var droppedObj = Instantiate(current.pickupPrefab, position, Quaternion.identity);
+        var pickupScript = droppedObj.GetComponent<WeaponPickup>();
+
+        // ✅ MEVCUT SİLAHIN MERMİSİNİ YERDEKİ KUTUYA YAZ
+        if (pickupScript != null)
+        {
+            pickupScript.SetAmmoData(current.ammoInMag, current.reserveAmmo);
+        }
     }
 
     void RefreshUI()

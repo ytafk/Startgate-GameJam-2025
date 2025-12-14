@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Main_Menu.unity
     guid: 05a36decb949b9c419a54b1837947877
   - enabled: 1
-    path: Assets/Scenes/level1.unity
+    path: Assets/Scenes/level12.unity
     guid: bc2685a8bf0e06341b0fee6dea8ae376
   - enabled: 0
     path: Assets/Scenes/Arena.unity
@@ -32,6 +32,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/BilgilendirmeMenu2.unity
     guid: a6717de4b8ff4364bbdaaf8d551a89a0
+  - enabled: 1
+    path: Assets/Scenes/ProwlerBilgilendirme.unity
+    guid: 844cb97c3c70f3540976fe90b474b485
+  - enabled: 1
+    path: Assets/Scenes/HealthBilgilendirme.unity
+    guid: dd25255e3897b7644ba2adc12351bf09
+  - enabled: 1
+    path: Assets/Scenes/AmmoBilgilendirme.unity
+    guid: 66d50ca37efc891479f5cbd2987501a9
   - enabled: 1
     path: Assets/Scenes/BilgilendirmePistol.unity
     guid: 5c555ee88bcddce4193fb30a5713046f
