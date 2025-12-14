@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5397481825289352399}
   - component: {fileID: 2953229281397959814}
   - component: {fileID: 376578972368008496}
+  - component: {fileID: -1770732879240405554}
   m_Layer: 0
   m_Name: SMGPickup 1
   m_TagString: Untagged
@@ -144,3 +145,17 @@ CapsuleCollider2D:
   m_Offset: {x: -0.03960491, y: -0.018002687}
   m_Size: {x: 2.7566812, y: 1.5179524}
   m_Direction: 1
+--- !u!114 &-1770732879240405554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8806689830278954923}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d853849b930fb584788cf95eab02ab76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WeaponIconData
+  icon: {fileID: 911258416861870708, guid: 13b94a20ffe7bcc408be1954852d4014, type: 3}
+  displayName: SMG

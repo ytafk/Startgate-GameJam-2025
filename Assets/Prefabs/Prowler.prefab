@@ -602,12 +602,26 @@ MonoBehaviour:
   target: {fileID: 8859096765029265838, guid: 75d4cf4c0c242254ba0746cb177d2abc, type: 3}
   playerTag: Player
   stopDistance: 0.25
+  animator: {fileID: 0}
+  attackRange: 0.65
+  attackCooldown: 0.55
+  attackLockTime: 0.25
+  damageWindowDuration: 0.12
+  damageRadius: 0.35
+  playerMask:
+    serializedVersion: 2
+    m_Bits: 0
   baseSpeed: 3
   baseDamage: 6
   maxOverload: 42
   maxSpeedMultiplier: 2.8
   maxDamageMultiplier: 2
   hitInterval: 0.45
+  separationRadius: 0.6
+  separationStrength: 2.5
+  enemyMask:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!58 &2965951370568223990
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -642,8 +656,8 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0.21133333}
-  m_Radius: 0.5
+  m_Offset: {x: -0.030744553, y: 0.018776655}
+  m_Radius: 0.4093852
 --- !u!95 &7060756778860000438
 Animator:
   serializedVersion: 7

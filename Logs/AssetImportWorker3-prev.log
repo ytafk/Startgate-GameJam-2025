@@ -1,9 +1,9 @@
 [Licensing::Module] Trying to connect to existing licensing client channel...
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-YTA" at "2025-12-13T12:57:53.8537598Z"
 Built from '6000.3/staging' branch; Version is '6000.3.0f1 (d1870ce95baf) revision 13731596'; Using compiler version '194234433'; Build Type 'Release'
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Rj9zWwPBf_s7-DaN09_B8" at "2025-12-13T22:01:04.2057569Z"
 OS: 'Windows 11  (10.0.26100) 64bit Professional' Language: 'tr' Physical Memory: 14029 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
-Date: 2025-12-13T12:57:53Z
+Date: 2025-12-13T22:01:04Z
 
 COMMAND LINE ARGUMENTS:
 D:\C_Calisma\6000.3.0f1\Editor\Unity.exe
@@ -17,9 +17,9 @@ D:/YTA/Desktop/Startgate GameJam 2025/Feed the robot
 -logFile
 Logs/AssetImportWorker3.log
 -srvPort
-60448
+51012
 -licensingIpc
-LicenseClient-YTA
+LicenseClient-Rj9zWwPBf_s7-DaN09_B8
 -job-worker-count
 9
 -background-job-worker-count
@@ -65,12 +65,12 @@ D:/YTA/Desktop/Startgate GameJam 2025/Feed the robot
     "memorysetup-job-temp-allocator-block-size-background=1048576"
     "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
     "memorysetup-temp-allocator-size-cloud-worker=32768"
-Player connection [18380]  Target information:
+Player connection [22868]  Target information:
 
-Player connection [18380]  * "[IP] 192.168.1.67 [Port] 0 [Flags] 2 [Guid] 1640913231 [EditorId] 1640913231 [Version] 1048832 [Id] WindowsEditor(7,Yigit-PC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [22868]  * "[IP] 192.168.1.67 [Port] 0 [Flags] 2 [Guid] 3181548920 [EditorId] 3181548920 [Version] 1048832 [Id] WindowsEditor(7,Yigit-PC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [18380] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [18380] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [22868] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [22868] Host joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 9
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
@@ -82,7 +82,7 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 3.40 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 4.42 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 6000.3.0f1 (d1870ce95baf)
 [Subsystems] Discovering subsystems at path D:/C_Calisma/6000.3.0f1/Editor/Data/Resources/UnitySubsystems
@@ -98,17 +98,17 @@ Initialize mono
 Mono path[0] = 'D:/C_Calisma/6000.3.0f1/Editor/Data/Managed'
 Mono path[1] = 'D:/C_Calisma/6000.3.0f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'D:/C_Calisma/6000.3.0f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56244
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56220
 Begin MonoManager ReloadAssembly
 [Licensing::Client] Handshaking with LicensingClient:
   Version:                 1.17.4+4293ba1
-  Session Id:              9e520ea6fde0430f8a202cb1f97e8ece
-  Correlation Id:          59885fa7c0bf53a5f5e69adc9f88a58f
-  External correlation Id: 4389790404181125575
+  Session Id:              3720d5da8d904ebb8e886193d69880b6
+  Correlation Id:          d75780a4c6780268d9653c9d4c78ed7e
+  External correlation Id: 6755267329135658627
   Machine Id:              mZZ1PC0OObweb8hRKufKTex2toM=
-[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-YTA" (connect: 0.00s, validation: 0.00s, handshake: 1.04s)
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-YTA-notifications" at "2025-12-13T12:57:54.9005425Z"
-[Licensing::Module] Licensing Background thread has ended after 1.05s
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-Rj9zWwPBf_s7-DaN09_B8" (connect: 0.00s, validation: 0.00s, handshake: 1.13s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Rj9zWwPBf_s7-DaN09_B8-notifications" at "2025-12-13T22:01:05.3407707Z"
+[Licensing::Module] Licensing Background thread has ended after 1.14s
 Registering precompiled unity dll's ...
 Register platform support module: D:/C_Calisma/6000.3.0f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: D:/C_Calisma/6000.3.0f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
@@ -148,46 +148,46 @@ Register platform support module: D:/C_Calisma/6000.3.0f1/Editor/Data/PlaybackEn
   Type: Assigned
   Expiration: Unlimited
 Register platform support module: D:/C_Calisma/6000.3.0f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
-Registered in 0.015127 seconds.
-- Loaded All Assemblies, in  0.431 seconds
+Registered in 0.015997 seconds.
+- Loaded All Assemblies, in  0.565 seconds
 [usbmuxd] Start listen thread
 [usbmuxd] Listen thread started
 Native extension for iOS target not found
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 243 ms
+Android Extension - Scanning For ADB Devices 226 ms
 Native extension for UWP target not found
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.690 seconds
-Domain Reload Profiling: 1120ms
-	BeginReloadAssembly (174ms)
+- Finished resetting the current domain, in  0.659 seconds
+Domain Reload Profiling: 1224ms
+	BeginReloadAssembly (224ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (33ms)
-	RebuildNativeTypeToScriptingClass (12ms)
-	initialDomainReloadingComplete (51ms)
-	LoadAllAssembliesAndSetupDomain (161ms)
-		LoadAssemblies (175ms)
+	RebuildCommonClasses (46ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (62ms)
+	LoadAllAssembliesAndSetupDomain (220ms)
+		LoadAssemblies (225ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (156ms)
-			TypeCache.Refresh (155ms)
-				TypeCache.ScanAssembly (142ms)
+		AnalyzeDomain (214ms)
+			TypeCache.Refresh (212ms)
+				TypeCache.ScanAssembly (197ms)
 			BuildScriptInfoCaches (0ms)
-			ResolveRequiredComponents (0ms)
-	FinalizeReload (690ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (659ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (646ms)
+		SetupLoadedEditorAssemblies (612ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (376ms)
-			SetLoadedEditorAssemblies (5ms)
-			BeforeProcessingInitializeOnLoad (90ms)
-			ProcessInitializeOnLoadAttributes (133ms)
-			ProcessInitializeOnLoadMethodAttributes (42ms)
+			InitializePlatformSupportModulesInManaged (373ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (76ms)
+			ProcessInitializeOnLoadAttributes (119ms)
+			ProcessInitializeOnLoadMethodAttributes (41ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -207,8 +207,8 @@ Begin MonoManager ReloadAssembly
   Product: Unity Personal
   Type: Assigned
   Expiration: Unlimited
-- Loaded All Assemblies, in  0.764 seconds
-Refreshing native plugins compatible for Editor in 1.09 ms, found 4 plugins.
+- Loaded All Assemblies, in  0.743 seconds
+Refreshing native plugins compatible for Editor in 1.29 ms, found 4 plugins.
 Native extension for iOS target not found
 Native extension for Android target not found
 Native extension for UWP target not found
@@ -219,192 +219,56 @@ Package Manager log level set to [2]
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.836 seconds
-Domain Reload Profiling: 1600ms
-	BeginReloadAssembly (188ms)
+- Finished resetting the current domain, in  0.901 seconds
+Domain Reload Profiling: 1644ms
+	BeginReloadAssembly (174ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (5ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (28ms)
-	RebuildCommonClasses (32ms)
-	RebuildNativeTypeToScriptingClass (10ms)
-	initialDomainReloadingComplete (32ms)
-	LoadAllAssembliesAndSetupDomain (501ms)
-		LoadAssemblies (386ms)
+		CreateAndSetChildDomain (27ms)
+	RebuildCommonClasses (31ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (29ms)
+	LoadAllAssembliesAndSetupDomain (498ms)
+		LoadAssemblies (363ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (233ms)
-			TypeCache.Refresh (172ms)
-				TypeCache.ScanAssembly (156ms)
-			BuildScriptInfoCaches (48ms)
+		AnalyzeDomain (242ms)
+			TypeCache.Refresh (178ms)
+				TypeCache.ScanAssembly (162ms)
+			BuildScriptInfoCaches (50ms)
 			ResolveRequiredComponents (9ms)
-	FinalizeReload (836ms)
+	FinalizeReload (902ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (699ms)
+		SetupLoadedEditorAssemblies (741ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (21ms)
-			SetLoadedEditorAssemblies (4ms)
-			BeforeProcessingInitializeOnLoad (147ms)
-			ProcessInitializeOnLoadAttributes (419ms)
-			ProcessInitializeOnLoadMethodAttributes (106ms)
+			InitializePlatformSupportModulesInManaged (30ms)
+			SetLoadedEditorAssemblies (5ms)
+			BeforeProcessingInitializeOnLoad (173ms)
+			ProcessInitializeOnLoadAttributes (424ms)
+			ProcessInitializeOnLoadMethodAttributes (108ms)
 			AfterProcessingInitializeOnLoad (1ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (5ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
-Refreshing native plugins compatible for Editor in 2.39 ms, found 4 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
+Refreshing native plugins compatible for Editor in 2.29 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 16 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6928 unused Assets / (4.3 MB). Loaded Objects now: 7781.
-Memory consumption went from 160.8 MB to 156.5 MB.
-Total: 12.724700 ms (FindLiveObjects: 0.667800 ms CreateObjectMapping: 0.558000 ms MarkObjects: 8.758000 ms  DeleteObjects: 2.739100 ms)
-
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.908 seconds
-Refreshing native plugins compatible for Editor in 1.69 ms, found 4 plugins.
-Native extension for iOS target not found
-Native extension for Android target not found
-Native extension for UWP target not found
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.024 seconds
-Domain Reload Profiling: 1935ms
-	BeginReloadAssembly (325ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (14ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (56ms)
-	RebuildCommonClasses (34ms)
-	RebuildNativeTypeToScriptingClass (18ms)
-	initialDomainReloadingComplete (33ms)
-	LoadAllAssembliesAndSetupDomain (500ms)
-		LoadAssemblies (502ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (197ms)
-			TypeCache.Refresh (8ms)
-				TypeCache.ScanAssembly (0ms)
-			BuildScriptInfoCaches (174ms)
-			ResolveRequiredComponents (10ms)
-	FinalizeReload (1024ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (858ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (22ms)
-			SetLoadedEditorAssemblies (7ms)
-			BeforeProcessingInitializeOnLoad (171ms)
-			ProcessInitializeOnLoadAttributes (553ms)
-			ProcessInitializeOnLoadMethodAttributes (102ms)
-			AfterProcessingInitializeOnLoad (3ms)
-			EditorAssembliesLoaded (1ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (20ms)
-Refreshing native plugins compatible for Editor in 2.78 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 16 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6926 unused Assets / (4.2 MB). Loaded Objects now: 7785.
-Memory consumption went from 161.2 MB to 157.0 MB.
-Total: 14.629700 ms (FindLiveObjects: 0.785300 ms CreateObjectMapping: 1.326200 ms MarkObjects: 9.623900 ms  DeleteObjects: 2.892600 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Import Request.
-  Time since last request: 948622.671188 seconds.
-  path: Assets/Prefabs/MiniGunWeapon.prefab
-  artifactKey: Guid(90d380e66a118094daab84707083b067) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/MiniGunWeapon.prefab using Guid(90d380e66a118094daab84707083b067) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '004dd8f037fff9e222da2e9bb22a390d') in 0.4834913 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 23
+Unloading 6932 unused Assets / (4.4 MB). Loaded Objects now: 7785.
+Memory consumption went from 162.6 MB to 158.2 MB.
+Total: 13.238100 ms (FindLiveObjects: 0.948800 ms CreateObjectMapping: 0.626700 ms MarkObjects: 8.717300 ms  DeleteObjects: 2.943000 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000068 seconds.
-  path: Assets/Prefabs/Regular_Bullet.prefab
-  artifactKey: Guid(7649abd781141904fbd477d94a7ef8a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Regular_Bullet.prefab using Guid(7649abd781141904fbd477d94a7ef8a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3f1d0824592ef284c3d1ab76d5487158') in 0.011474 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000048 seconds.
-  path: Assets/Prefabs/SMGWeapon.prefab
-  artifactKey: Guid(f73c199ee2f40ac489a118a87bf7b09a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/SMGWeapon.prefab using Guid(f73c199ee2f40ac489a118a87bf7b09a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd7ea10fd2b3cc59b7fd437aab65a3346') in 0.0225011 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 23
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/Prefabs/SMGPickup 1.prefab
-  artifactKey: Guid(f5d147f6515ff004f862221272c316c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/SMGPickup 1.prefab using Guid(f5d147f6515ff004f862221272c316c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f4b61a43f8f16172ea4c728d1c8d73af') in 0.0117788 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 23
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/Prefabs/PistolWeapon.prefab
-  artifactKey: Guid(1175f8907133c0a4caac01fdfe1eee61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/PistolWeapon.prefab using Guid(1175f8907133c0a4caac01fdfe1eee61) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '96288ff8d64c2ecd78cd8b03329b2d56') in 0.008916 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 23
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.077294 seconds.
-  path: Assets/Prefabs/PistolPickup 1.prefab
-  artifactKey: Guid(9656764a943ced8468d00d576275b3b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/PistolPickup 1.prefab using Guid(9656764a943ced8468d00d576275b3b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b87cd195e417fc42fe4ef39324648b29') in 0.0177722 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 23
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/Prefabs/RifleWeapon.prefab
-  artifactKey: Guid(297407febc29a6546884571e5cb0aa74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/RifleWeapon.prefab using Guid(297407febc29a6546884571e5cb0aa74) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7e43dcac7bed11cc88384a830909f3a1') in 0.0147616 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 23
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000050 seconds.
-  path: Assets/Prefabs/SMGPickup 1.prefab
-  artifactKey: Guid(f5d147f6515ff004f862221272c316c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/SMGPickup 1.prefab using Guid(f5d147f6515ff004f862221272c316c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0bc33af755a9cf0e1d87bacf07464a39') in 0.0144088 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 23
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Assets/Prefabs/RiflePickup.prefab
-  artifactKey: Guid(2c2e378392e532c4fac7670406f92bd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/RiflePickup.prefab using Guid(2c2e378392e532c4fac7670406f92bd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '44825fccc08dd06fca3b8f071c87dc51') in 0.0128035 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 23
-
-========================================================================
-Received Import Request.
-  Time since last request: 11.219137 seconds.
-  path: Assets/Prefabs/PistolPickup 1.prefab
-  artifactKey: Guid(9656764a943ced8468d00d576275b3b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/PistolPickup 1.prefab using Guid(9656764a943ced8468d00d576275b3b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '851b7fd0f6abcd38f4365c8517ffc547') in 0.01752 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 23
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/Prefabs/SMGWeapon.prefab
-  artifactKey: Guid(f73c199ee2f40ac489a118a87bf7b09a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/SMGWeapon.prefab using Guid(f73c199ee2f40ac489a118a87bf7b09a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a0aa7cf94a90078ea32d41cee08a5c99') in 0.0175588 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 23
+  Time since last request: 980853.196844 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Materials/Small Crate_diffuse.mat
+  artifactKey: Guid(22262639920f43d6be32430e4e58350d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Materials/Small Crate_diffuse.mat using Guid(22262639920f43d6be32430e4e58350d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd0bb5d050d4d6d50c6c5e9402f50c7df') in 0.3899025 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
-AssetImportWorkerClient::OnTransportError - code=2 error=End of file
 AssetImportWorker is now disconnected from the server
 Process exiting
 Exiting without the bug reporter. Application will terminate with return code 0

@@ -4,12 +4,13 @@ public class Pistol : WeaponBase
 {
     public override void OnPress()
     {
-        // tek týk = tek mermi
-        TryFire();
+        if (!CanShoot()) return;
+
+        FireOnce();
+        ConsumeAmmoAndSetCooldown();
     }
 
     public override void OnRelease() { }
 }
-
 
 

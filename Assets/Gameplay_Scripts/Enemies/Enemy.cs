@@ -1,4 +1,4 @@
-using System;
+﻿using System; // Action event'i için gerekli
 using UnityEngine;
 
 public class EnemyRobot : MonoBehaviour
@@ -7,16 +7,34 @@ public class EnemyRobot : MonoBehaviour
     public float maxOverload = 42f;
     public float currentOverload = 0f;
 
-
     [Header("Optional")]
-    public float overloadDecayPerSecond = 0f; // istersek zamanla azals�n (�imdilik 0)
+    public float overloadDecayPerSecond = 0f; // Zamanla azalma hızı
 
     [Header("FX")]
     public GameObject explosionPrefab;
 
-
+    // Düşman öldüğünde tetiklenecek global olay
     public static event Action<EnemyRobot> OnAnyEnemyDied;
 
+    // UI Bağlantısı
+    EnemyOverloadUI ui;
+
+    void Awake()
+    {
+        ui = GetComponentInChildren<EnemyOverloadUI>();
+        UpdateUI();
+    }
+
+    void Update()
+    {
+        // Aşırı yükün zamanla azalması (Opsiyonel)
+        if (overloadDecayPerSecond > 0f && currentOverload > 0f)
+        {
+            currentOverload -= overloadDecayPerSecond * Time.deltaTime;
+            currentOverload = Mathf.Max(0f, currentOverload);
+            UpdateUI();
+        }
+    }
 
     public void AddOverload(float amount)
     {
@@ -31,40 +49,40 @@ public class EnemyRobot : MonoBehaviour
         }
     }
 
-    void Update()
-    {
-        // �leride istersen a��r� y�k zamanla d��s�n
-        if (overloadDecayPerSecond > 0f && currentOverload > 0f)
-        {
-            currentOverload -= overloadDecayPerSecond * Time.deltaTime;
-            currentOverload = Mathf.Max(0f, currentOverload);
-            UpdateUI();
-        }
-    }
-
     void Explode()
     {
+        // 1. Patlama Efekti
         if (explosionPrefab)
             Instantiate(explosionPrefab, transform.position, Quaternion.identity);
-        
+
+        // 2. Loot (Ganimet) Düşürme
         var dropper = GetComponent<EnemyLootDropper>();
         if (dropper != null) dropper.Drop();
 
+        // ✅ 3. SKOR EKLEME (BURASI EKLENDİ)
+        // Eğer sahnede WeaponUIManager varsa 42 puan ekle
+        if (WeaponUIManager.Instance != null)
+        {
+            WeaponUIManager.Instance.AddScore(42);
+        }
+
+        // 4. Ölüm Eventini Bildir (WaveManager vs. için)
         OnAnyEnemyDied?.Invoke(this);
-        Destroy(gameObject);
+
+        // 5. Bileşenleri Devre Dışı Bırak (Ölüm animasyonu vs. için güvenlik)
         GetComponent<EnemyAnimDriver>()?.SetDead();
-        GetComponent<ProwlerAI>().enabled = false;
-        GetComponent<Rigidbody2D>().linearVelocity = Vector2.zero;
-        GetComponent<Collider2D>().enabled = false; // istersen
 
-    }
+        var ai = GetComponent<ProwlerAI>();
+        if (ai) ai.enabled = false;
 
-    // UI ba�lant�s�
-    EnemyOverloadUI ui;
-    void Awake()
-    {
-        ui = GetComponentInChildren<EnemyOverloadUI>();
-        UpdateUI();
+        var rb = GetComponent<Rigidbody2D>();
+        if (rb) rb.linearVelocity = Vector2.zero; // Unity 6 için linearVelocity
+
+        var col = GetComponent<Collider2D>();
+        if (col) col.enabled = false;
+
+        // 6. Objeyi Yok Et
+        Destroy(gameObject);
     }
 
     void UpdateUI()
@@ -72,5 +90,4 @@ public class EnemyRobot : MonoBehaviour
         if (ui)
             ui.SetValue(currentOverload / maxOverload);
     }
-
 }

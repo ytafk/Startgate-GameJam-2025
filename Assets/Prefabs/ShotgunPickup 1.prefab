@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8974003404111246437}
   - component: {fileID: 8850189119567280367}
   - component: {fileID: 466055807688908478}
+  - component: {fileID: 3128752068095369738}
   m_Layer: 0
   m_Name: ShotgunPickup 1
   m_TagString: Untagged
@@ -144,3 +145,17 @@ CapsuleCollider2D:
   m_Offset: {x: 0.0404771, y: 0.016190248}
   m_Size: {x: 3.9650025, y: 1.5715511}
   m_Direction: 1
+--- !u!114 &3128752068095369738
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4544831942706095356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d853849b930fb584788cf95eab02ab76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WeaponIconData
+  icon: {fileID: 7000762107255574978, guid: f149b98df32a23a45b253972766e0430, type: 3}
+  displayName: Shotgun

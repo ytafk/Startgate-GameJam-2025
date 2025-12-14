@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1838139837367393707}
   - component: {fileID: 2865349106377713260}
+  - component: {fileID: 6553034980626314641}
   m_Layer: 0
   m_Name: ShotgunWeapon
   m_TagString: Untagged
@@ -57,9 +58,23 @@ MonoBehaviour:
   bulletPrefab: {fileID: 5592712660193589804, guid: 7649abd781141904fbd477d94a7ef8a2, type: 3}
   cam: {fileID: 0}
   bulletSpeed: 12
+  logShootBlock: 0
   ammoInMag: 0
   reserveAmmo: 0
-  isReloading: 0
   pelletCount: 10
   spreadAngle: 25
   pelletSpeedMultiplier: 1
+--- !u!114 &6553034980626314641
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5953774931170770446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d853849b930fb584788cf95eab02ab76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WeaponIconData
+  icon: {fileID: 7000762107255574978, guid: f149b98df32a23a45b253972766e0430, type: 3}
+  displayName: Shotgun

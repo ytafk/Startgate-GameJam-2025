@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4129270341126652217}
   - component: {fileID: 6330984086903353400}
   - component: {fileID: 5749499168600892069}
+  - component: {fileID: -5566245736938027411}
   m_Layer: 0
   m_Name: RifleWeapon
   m_TagString: Untagged
@@ -58,9 +59,9 @@ MonoBehaviour:
   bulletPrefab: {fileID: 5592712660193589804, guid: 7649abd781141904fbd477d94a7ef8a2, type: 3}
   cam: {fileID: 0}
   bulletSpeed: 22
+  logShootBlock: 0
   ammoInMag: 0
   reserveAmmo: 0
-  isReloading: 0
   fireRate: 6
   holdAutoDelay: 0.12
 --- !u!212 &5749499168600892069
@@ -122,3 +123,17 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &-5566245736938027411
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5411220445949847961}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d853849b930fb584788cf95eab02ab76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WeaponIconData
+  icon: {fileID: -3185118922473720771, guid: a677ae706ad59004396db7ef250b5767, type: 3}
+  displayName: Rifle

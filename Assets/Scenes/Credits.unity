@@ -2483,6 +2483,7 @@ GameObject:
   - component: {fileID: 735819451}
   - component: {fileID: 735819450}
   - component: {fileID: 735819449}
+  - component: {fileID: 735819453}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -2521,7 +2522,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31814fd0078abef4b935258d7d689a44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SahneGeciskodu
-  sceneName: MainMenu
+  sceneName: Main_Menu
   animator: {fileID: 0}
   image: {fileID: 0}
   defaultSprite: {fileID: 0}
@@ -2608,6 +2609,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 735819447}
   m_CullTransparentMesh: 1
+--- !u!114 &735819453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 735819447}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5625fcef40ce3a48b7979f05d941128, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SilahBuyumeKuculme
+  hiz: 5
+  guc: 0.05
 --- !u!1 &789869969
 GameObject:
   m_ObjectHideFlags: 0

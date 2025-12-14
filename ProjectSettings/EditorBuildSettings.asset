@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Main_Menu.unity
     guid: 05a36decb949b9c419a54b1837947877
   - enabled: 1
+    path: Assets/Scenes/level1.unity
+    guid: bc2685a8bf0e06341b0fee6dea8ae376
+  - enabled: 0
     path: Assets/Scenes/Arena.unity
     guid: 3d4372b8602e5ef4283c3be82a861bd2
   - enabled: 1
@@ -20,6 +23,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Credits.unity
     guid: ea010026db6eded4391613ebe3ed5613
+  - enabled: 1
+    path: Assets/Scenes/Howtoplay.unity
+    guid: ec0bd154f2ac7a6499957ea7d901c7e7
   - enabled: 1
     path: Assets/Scenes/BilgilendirmeMenu.unity
     guid: 2913ae64dfc0f3f43aec7c67f690d87b
@@ -44,6 +50,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/BilgilendirmeMiniGun.unity
     guid: 0838715d2cb139843923849634b99896
+  - enabled: 1
+    path: Assets/Scenes/LoseMenu.unity
+    guid: be0830eb443cfa648ad55e00f8367bb6
+  - enabled: 1
+    path: Assets/Scenes/Win_Menu.unity
+    guid: 5deae46ad0e614d48a75185177e2518c
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

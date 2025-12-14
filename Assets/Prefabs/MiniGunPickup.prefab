@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2085421853428553145}
   - component: {fileID: 1215372317384717867}
   - component: {fileID: 8405249703482392290}
+  - component: {fileID: -5974456072216633309}
   m_Layer: 0
   m_Name: MiniGunPickup
   m_TagString: Untagged
@@ -144,3 +145,17 @@ CapsuleCollider2D:
   m_Offset: {x: -0.037691582, y: 0.03897576}
   m_Size: {x: 3.5385482, y: 1.4562569}
   m_Direction: 1
+--- !u!114 &-5974456072216633309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8810368552404145163}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d853849b930fb584788cf95eab02ab76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WeaponIconData
+  icon: {fileID: -7391541840683025827, guid: a19a1a31e23303c42bf1170c2f77bce5, type: 3}
+  displayName: MiniGun

@@ -56,9 +56,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerHealth
   maxHP: 100
-  hp: 100
+  currentHP: 0
+  healthSlider: {fileID: 0}
+  fillImage: {fileID: 0}
+  greenBar: {fileID: 0}
+  orangeBar: {fileID: 0}
+  redBar: {fileID: 0}
   anim: {fileID: 6059439680122513275}
   hitAnimCooldown: 0.25
+  gameOverSceneName: GameOver
+  delayBeforeSceneLoad: 2
 --- !u!212 &5264118463929176980
 SpriteRenderer:
   serializedVersion: 2
@@ -248,8 +255,8 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_Radius: 0.5
+  m_Offset: {x: 0.085017055, y: 0.037407517}
+  m_Radius: 0.38437685
 --- !u!95 &8685665540799348230
 Animator:
   serializedVersion: 7

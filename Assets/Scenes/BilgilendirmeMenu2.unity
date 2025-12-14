@@ -370,7 +370,6 @@ MonoBehaviour:
   image: {fileID: 0}
   defaultSprite: {fileID: 0}
   hoverAnimationName: 
-  btn: {fileID: 0}
 --- !u!1 &334571993
 GameObject:
   m_ObjectHideFlags: 0
@@ -1059,7 +1058,6 @@ MonoBehaviour:
   image: {fileID: 0}
   defaultSprite: {fileID: 0}
   hoverAnimationName: 
-  btn: {fileID: 0}
 --- !u!1 &563750251
 GameObject:
   m_ObjectHideFlags: 0
@@ -1229,7 +1227,7 @@ SpriteRenderer:
   m_Size: {x: 3.25, y: 1.3125}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
 --- !u!114 &710118883
 MonoBehaviour:
@@ -1245,7 +1243,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SilahBuyumeKuculme
   hiz: 5
   guc: 3
-  baslangicBoyutu: {x: 0, y: 0, z: 0}
 --- !u!1 &899655070
 GameObject:
   m_ObjectHideFlags: 0
@@ -1336,7 +1333,7 @@ SpriteRenderer:
   m_Size: {x: 4, y: 1.9375}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
 --- !u!114 &899655073
 MonoBehaviour:
@@ -1352,7 +1349,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SilahBuyumeKuculme
   hiz: 5
   guc: 3
-  baslangicBoyutu: {x: 0, y: 0, z: 0}
 --- !u!1 &930276764
 GameObject:
   m_ObjectHideFlags: 0
@@ -1767,7 +1763,6 @@ MonoBehaviour:
   image: {fileID: 0}
   defaultSprite: {fileID: 0}
   hoverAnimationName: 
-  btn: {fileID: 0}
 --- !u!1 &1108059696
 GameObject:
   m_ObjectHideFlags: 0
@@ -1908,7 +1903,6 @@ MonoBehaviour:
   image: {fileID: 0}
   defaultSprite: {fileID: 0}
   hoverAnimationName: 
-  btn: {fileID: 0}
 --- !u!1 &1168355732
 GameObject:
   m_ObjectHideFlags: 0
@@ -1999,7 +1993,7 @@ SpriteRenderer:
   m_Size: {x: 3.5625, y: 1.5625}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
 --- !u!114 &1168355735
 MonoBehaviour:
@@ -2015,7 +2009,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SilahBuyumeKuculme
   hiz: 5
   guc: 3
-  baslangicBoyutu: {x: 0, y: 0, z: 0}
 --- !u!1 &1220633169
 GameObject:
   m_ObjectHideFlags: 0
@@ -2292,7 +2285,6 @@ MonoBehaviour:
   image: {fileID: 0}
   defaultSprite: {fileID: 0}
   hoverAnimationName: 
-  btn: {fileID: 0}
 --- !u!1 &1518098903
 GameObject:
   m_ObjectHideFlags: 0
@@ -2306,6 +2298,7 @@ GameObject:
   - component: {fileID: 1518098906}
   - component: {fileID: 1518098905}
   - component: {fileID: 1518098908}
+  - component: {fileID: 1518098909}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -2431,7 +2424,20 @@ MonoBehaviour:
   image: {fileID: 0}
   defaultSprite: {fileID: 0}
   hoverAnimationName: 
-  btn: {fileID: 0}
+--- !u!114 &1518098909
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1518098903}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5625fcef40ce3a48b7979f05d941128, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SilahBuyumeKuculme
+  hiz: 5
+  guc: 0.05
 --- !u!1 &1543175515
 GameObject:
   m_ObjectHideFlags: 0
@@ -2522,7 +2528,7 @@ SpriteRenderer:
   m_Size: {x: 3.625, y: 1.3125}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
 --- !u!114 &1543175518
 MonoBehaviour:
@@ -2538,7 +2544,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SilahBuyumeKuculme
   hiz: 5
   guc: 3
-  baslangicBoyutu: {x: 0, y: 0, z: 0}
 --- !u!1 &1569936765
 GameObject:
   m_ObjectHideFlags: 0
@@ -2629,7 +2634,7 @@ SpriteRenderer:
   m_Size: {x: 2.4375, y: 1.25}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
 --- !u!114 &1569936768
 MonoBehaviour:
@@ -2645,7 +2650,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SilahBuyumeKuculme
   hiz: 5
   guc: 3
-  baslangicBoyutu: {x: 0, y: 0, z: 0}
 --- !u!1 &1713426985
 GameObject:
   m_ObjectHideFlags: 0
@@ -2786,7 +2790,6 @@ MonoBehaviour:
   image: {fileID: 0}
   defaultSprite: {fileID: 0}
   hoverAnimationName: 
-  btn: {fileID: 0}
 --- !u!1 &1748971728
 GameObject:
   m_ObjectHideFlags: 0
@@ -3226,7 +3229,7 @@ SpriteRenderer:
   m_Size: {x: 2.3125, y: 1.5}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
 --- !u!114 &1932068944
 MonoBehaviour:
@@ -3242,7 +3245,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SilahBuyumeKuculme
   hiz: 5
   guc: 3
-  baslangicBoyutu: {x: 0, y: 0, z: 0}
 --- !u!1 &2091500878
 GameObject:
   m_ObjectHideFlags: 0
@@ -3383,7 +3385,6 @@ MonoBehaviour:
   image: {fileID: 0}
   defaultSprite: {fileID: 0}
   hoverAnimationName: 
-  btn: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

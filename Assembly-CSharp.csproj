@@ -72,7 +72,9 @@
     <Compile Include="Assets\UI_Scripts\SilahBuyumeKuculme.cs" />
     <Compile Include="Assets\Gameplay_Scripts\Player\PlayerAnimDriver.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
+    <Compile Include="Assets\UI_Scripts\WeaponUIManager.cs" />
     <Compile Include="Assets\Gameplay_Scripts\Weapons\AmmoPickup.cs" />
+    <Compile Include="Assets\UI_Scripts\MusicManager.cs" />
     <Compile Include="Assets\UI_Scripts\CursorYoneticisi.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_ExampleScript_01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMPro_InstructionOverlay.cs" />
@@ -111,6 +113,7 @@
     <Compile Include="Assets\UI_Scripts\SahneGeciskodu.cs" />
     <Compile Include="Assets\Gameplay_Scripts\Weapons\HealthPickup.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\CameraController.cs" />
+    <Compile Include="Assets\UI_Scripts\Healthmanager.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
     <Compile Include="Assets\UI_Scripts\MenuBilgilendirmeButton.cs" />
     <Compile Include="Assets\Gameplay_Scripts\Player\PlayerHealth.cs" />
@@ -127,6 +130,8 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventCheck.cs" />
     <Compile Include="Assets\Gameplay_Scripts\Enemies\Enemy.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshProFloatingText.cs" />
+    <Compile Include="Assets\UI_Scripts\WeaponIconData.cs" />
+    <Compile Include="Assets\UI_Scripts\Volumeslidersc.cs" />
     <Compile Include="Assets\Gameplay_Scripts\Weapons\WeaponBase.cs" />
   </ItemGroup>
   <ItemGroup>
