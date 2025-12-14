@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\yasin\\OneDrive\\Masa\u00FCst\u00FC\\Startgate_gamejam\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\yasin\\OneDrive\\Masa\u00FCst\u00FC\\Startgate_gamejam\\Assets\\Gameplay_Scripts\\Player\\PlayerHealth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Gameplay_Scripts\\Player\\PlayerHealth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\yasin\\OneDrive\\Masa\u00FCst\u00FC\\Startgate_gamejam\\Assets\\Gameplay_Scripts\\Weapons\\WeaponBase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Gameplay_Scripts\\Weapons\\WeaponBase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -36,10 +40,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\yasin\\OneDrive\\Masa\u00FCst\u00FC\\Startgate_gamejam\\Assets\\Gameplay_Scripts\\Weapons\\Rifle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Gameplay_Scripts\\Weapons\\Rifle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\yasin\\OneDrive\\Masa\u00FCst\u00FC\\Startgate_gamejam\\Assets\\Gameplay_Scripts\\Player\\PlayerHealth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Gameplay_Scripts\\Player\\PlayerHealth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\yasin\\OneDrive\\Masa\u00FCst\u00FC\\Startgate_gamejam\\Assets\\Gameplay_Scripts\\Enemies\\ProwlerAI.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -117,11 +117,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "Pistol.cs",
               "DocumentMoniker": "C:\\Users\\yasin\\OneDrive\\Masa\u00FCst\u00FC\\Startgate_gamejam\\Assets\\Gameplay_Scripts\\Weapons\\Pistol.cs",
               "RelativeDocumentMoniker": "Assets\\Gameplay_Scripts\\Weapons\\Pistol.cs",
@@ -134,7 +134,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "WeaponUIManager.cs",
               "DocumentMoniker": "C:\\Users\\yasin\\OneDrive\\Masa\u00FCst\u00FC\\Startgate_gamejam\\Assets\\UI_Scripts\\WeaponUIManager.cs",
               "RelativeDocumentMoniker": "Assets\\UI_Scripts\\WeaponUIManager.cs",
@@ -142,12 +142,11 @@
               "RelativeToolTip": "Assets\\UI_Scripts\\WeaponUIManager.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAEkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-13T13:49:21.323Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-13T13:49:21.323Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Enemy.cs",
               "DocumentMoniker": "C:\\Users\\yasin\\OneDrive\\Masa\u00FCst\u00FC\\Startgate_gamejam\\Assets\\Gameplay_Scripts\\Enemies\\Enemy.cs",
               "RelativeDocumentMoniker": "Assets\\Gameplay_Scripts\\Enemies\\Enemy.cs",
@@ -155,12 +154,11 @@
               "RelativeToolTip": "Assets\\Gameplay_Scripts\\Enemies\\Enemy.cs",
               "ViewState": "AgIAADQAAAAAAAAAAAAUwEEAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-13T15:52:20.251Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-13T15:52:20.251Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "Rifle.cs",
               "DocumentMoniker": "C:\\Users\\yasin\\OneDrive\\Masa\u00FCst\u00FC\\Startgate_gamejam\\Assets\\Gameplay_Scripts\\Weapons\\Rifle.cs",
               "RelativeDocumentMoniker": "Assets\\Gameplay_Scripts\\Weapons\\Rifle.cs",
@@ -172,7 +170,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "PlayerHealth.cs",
               "DocumentMoniker": "C:\\Users\\yasin\\Downloads\\Startgate-GameJam-2025-yigit-orba\\Startgate-GameJam-2025-yigit-orba\\Assets\\Gameplay_Scripts\\Player\\PlayerHealth.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\Downloads\\Startgate-GameJam-2025-yigit-orba\\Startgate-GameJam-2025-yigit-orba\\Assets\\Gameplay_Scripts\\Player\\PlayerHealth.cs",
@@ -184,7 +182,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "PlayerWeaponInventory.cs",
               "DocumentMoniker": "C:\\Users\\yasin\\OneDrive\\Masa\u00FCst\u00FC\\Startgate_gamejam\\Assets\\Gameplay_Scripts\\Weapons\\PlayerWeaponInventory.cs",
               "RelativeDocumentMoniker": "Assets\\Gameplay_Scripts\\Weapons\\PlayerWeaponInventory.cs",
@@ -196,15 +194,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 0,
               "Title": "PlayerHealth.cs",
               "DocumentMoniker": "C:\\Users\\yasin\\OneDrive\\Masa\u00FCst\u00FC\\Startgate_gamejam\\Assets\\Gameplay_Scripts\\Player\\PlayerHealth.cs",
               "RelativeDocumentMoniker": "Assets\\Gameplay_Scripts\\Player\\PlayerHealth.cs",
               "ToolTip": "C:\\Users\\yasin\\OneDrive\\Masa\u00FCst\u00FC\\Startgate_gamejam\\Assets\\Gameplay_Scripts\\Player\\PlayerHealth.cs",
               "RelativeToolTip": "Assets\\Gameplay_Scripts\\Player\\PlayerHealth.cs",
-              "ViewState": "AgIAAD0AAAAAAAAAAAAIwEUAAAAOAAAAAAAAAA==",
+              "ViewState": "AgIAAB8AAAAAAAAAAAD4vywAAABNAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-13T13:50:28.817Z"
+              "WhenOpened": "2025-12-13T13:50:28.817Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -220,7 +219,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "WeaponBase.cs",
               "DocumentMoniker": "C:\\Users\\yasin\\OneDrive\\Masa\u00FCst\u00FC\\Startgate_gamejam\\Assets\\Gameplay_Scripts\\Weapons\\WeaponBase.cs",
               "RelativeDocumentMoniker": "Assets\\Gameplay_Scripts\\Weapons\\WeaponBase.cs",
@@ -233,7 +232,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "SniperRifle.cs",
               "DocumentMoniker": "C:\\Users\\yasin\\OneDrive\\Masa\u00FCst\u00FC\\Startgate_gamejam\\Assets\\Gameplay_Scripts\\Weapons\\SniperRifle.cs",
               "RelativeDocumentMoniker": "Assets\\Gameplay_Scripts\\Weapons\\SniperRifle.cs",
@@ -257,7 +256,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Bullet.cs",
               "DocumentMoniker": "C:\\Users\\yasin\\OneDrive\\Masa\u00FCst\u00FC\\Startgate_gamejam\\Assets\\Gameplay_Scripts\\Weapons\\Bullet.cs",
               "RelativeDocumentMoniker": "Assets\\Gameplay_Scripts\\Weapons\\Bullet.cs",

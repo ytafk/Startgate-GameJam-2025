@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4463256930840780312}
   - component: {fileID: 8571753465880431721}
   - component: {fileID: 912720601117756766}
+  - component: {fileID: 6006778151490883187}
   m_Layer: 0
   m_Name: SniperPickup 1
   m_TagString: Untagged
@@ -144,3 +145,17 @@ CapsuleCollider2D:
   m_Offset: {x: -0.105629385, y: -0.030382378}
   m_Size: {x: 4.494857, y: 1.9982718}
   m_Direction: 1
+--- !u!114 &6006778151490883187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5030639708248459350}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d853849b930fb584788cf95eab02ab76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WeaponIconData
+  icon: {fileID: -4023586337481629008, guid: e5f2885933afabf469f6bdec532b8fc5, type: 3}
+  displayName: Sniper

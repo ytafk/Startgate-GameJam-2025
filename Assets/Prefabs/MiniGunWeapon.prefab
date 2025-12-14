@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1478561106627209435}
   - component: {fileID: 9149734116630549441}
   - component: {fileID: 1190621325124727538}
-  - component: {fileID: 8992304926826167316}
+  - component: {fileID: -8865468072395123706}
   m_Layer: 0
   m_Name: MiniGunWeapon
   m_TagString: Untagged
@@ -118,11 +118,10 @@ MonoBehaviour:
   bulletPrefab: {fileID: 5592712660193589804, guid: 7649abd781141904fbd477d94a7ef8a2, type: 3}
   cam: {fileID: 0}
   bulletSpeed: 18
+  logShootBlock: 0
   ammoInMag: 0
   reserveAmmo: 0
-  isReloading: 0
-  fireRate: 15
---- !u!114 &8992304926826167316
+--- !u!114 &-8865468072395123706
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -135,4 +134,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WeaponIconData
   icon: {fileID: -7391541840683025827, guid: a19a1a31e23303c42bf1170c2f77bce5, type: 3}
-  displayName: Minigun
+  displayName: MiniGun

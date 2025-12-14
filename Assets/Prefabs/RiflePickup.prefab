@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4197785150002255793}
   - component: {fileID: -7394128973014782941}
   - component: {fileID: 3853138218909984492}
+  - component: {fileID: 42420439608019199}
   m_Layer: 0
   m_Name: RiflePickup
   m_TagString: Untagged
@@ -81,7 +82,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 10
   m_MaskInteraction: 0
   m_Sprite: {fileID: -3185118922473720771, guid: a677ae706ad59004396db7ef250b5767, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -144,3 +145,17 @@ CapsuleCollider2D:
   m_Offset: {x: -0.024084687, y: 0.028391307}
   m_Size: {x: 3.973152, y: 1.5179859}
   m_Direction: 1
+--- !u!114 &42420439608019199
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2587931454148870271}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d853849b930fb584788cf95eab02ab76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WeaponIconData
+  icon: {fileID: -3185118922473720771, guid: a677ae706ad59004396db7ef250b5767, type: 3}
+  displayName: Rifle
